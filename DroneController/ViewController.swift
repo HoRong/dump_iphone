@@ -20,6 +20,14 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
+    @IBAction func btn_setting(sender: AnyObject) {
+        if let uvc = self.storyboard?.instantiateViewControllerWithIdentifier("MenuSettingVC"){
+        
+            self.presentViewController(uvc, animated: false, completion: nil)
+        }
+        
+        
+    }
 
 }
 

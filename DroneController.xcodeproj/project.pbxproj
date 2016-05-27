@@ -15,6 +15,7 @@
 		299F813A1CF6A83900F68664 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 299F81381CF6A83900F68664 /* LaunchScreen.storyboard */; };
 		299F81451CF6A83900F68664 /* DroneControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 299F81441CF6A83900F68664 /* DroneControllerTests.swift */; };
 		299F81501CF6A83900F68664 /* DroneControllerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 299F814F1CF6A83900F68664 /* DroneControllerUITests.swift */; };
+		299F815E1CF7EC0600F68664 /* MenuSettingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 299F815D1CF7EC0600F68664 /* MenuSettingVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		299F814B1CF6A83900F68664 /* DroneControllerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DroneControllerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		299F814F1CF6A83900F68664 /* DroneControllerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DroneControllerUITests.swift; sourceTree = "<group>"; };
 		299F81511CF6A83900F68664 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		299F815D1CF7EC0600F68664 /* MenuSettingVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuSettingVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +103,7 @@
 			children = (
 				299F812C1CF6A83900F68664 /* AppDelegate.swift */,
 				299F812E1CF6A83900F68664 /* ViewController.swift */,
+				299F815D1CF7EC0600F68664 /* MenuSettingVC.swift */,
 				299F81301CF6A83900F68664 /* Main.storyboard */,
 				299F81361CF6A83900F68664 /* Assets.xcassets */,
 				299F81381CF6A83900F68664 /* LaunchScreen.storyboard */,
@@ -261,6 +264,7 @@
 			files = (
 				299F812F1CF6A83900F68664 /* ViewController.swift in Sources */,
 				299F81351CF6A83900F68664 /* DroneController.xcdatamodeld in Sources */,
+				299F815E1CF7EC0600F68664 /* MenuSettingVC.swift in Sources */,
 				299F812D1CF6A83900F68664 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
