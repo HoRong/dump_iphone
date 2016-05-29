@@ -408,16 +408,55 @@
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="조이스틱 모드" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qfl-f1-IdI">
-                                <rect key="frame" x="55" y="73" width="93" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="조이스틱 모드" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qfl-f1-IdI">
+                                <rect key="frame" x="65" y="96" width="87.5" height="19.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yfb-hf-s75">
+                                <rect key="frame" x="297" y="82" width="80" height="47"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <state key="normal" title="모드 2"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wpo-Im-y7E">
+                                <rect key="frame" x="407" y="82" width="80" height="47"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <state key="normal" title="모드 3"/>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="조이스틱 모드 3" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ia3-Dj-xyM">
+                                <rect key="frame" x="236.5" y="154" width="95.5" height="18"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZOc-LS-OgC">
+                                <rect key="frame" x="187" y="82" width="80" height="47"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="80" id="CyP-Lm-IdB"/>
+                                    <constraint firstAttribute="height" constant="47" id="W5c-Gv-MFO"/>
+                                </constraints>
+                                <state key="normal" title="모드 1"/>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="wpo-Im-y7E" firstAttribute="leading" secondItem="Yfb-hf-s75" secondAttribute="trailing" constant="30" id="40Z-WK-hdm"/>
+                            <constraint firstItem="ZOc-LS-OgC" firstAttribute="centerY" secondItem="qfl-f1-IdI" secondAttribute="centerY" id="5B3-rs-FpR"/>
+                            <constraint firstItem="wpo-Im-y7E" firstAttribute="height" secondItem="Yfb-hf-s75" secondAttribute="height" id="BN5-2g-2X8"/>
+                            <constraint firstItem="Yfb-hf-s75" firstAttribute="height" secondItem="ZOc-LS-OgC" secondAttribute="height" id="Bo2-fm-i8U"/>
+                            <constraint firstItem="Yfb-hf-s75" firstAttribute="centerY" secondItem="ZOc-LS-OgC" secondAttribute="centerY" id="E9D-HZ-6Dn"/>
+                            <constraint firstItem="Ia3-Dj-xyM" firstAttribute="top" secondItem="ZOc-LS-OgC" secondAttribute="bottom" constant="25" id="EcJ-Ea-NVV"/>
+                            <constraint firstItem="wpo-Im-y7E" firstAttribute="centerY" secondItem="Yfb-hf-s75" secondAttribute="centerY" id="LfS-ii-DSv"/>
+                            <constraint firstItem="Yfb-hf-s75" firstAttribute="leading" secondItem="ZOc-LS-OgC" secondAttribute="trailing" constant="29.5" id="LzH-k7-WkD"/>
+                            <constraint firstItem="Yfb-hf-s75" firstAttribute="width" secondItem="ZOc-LS-OgC" secondAttribute="width" id="PCh-ju-PKw"/>
+                            <constraint firstItem="ZOc-LS-OgC" firstAttribute="leading" secondItem="qfl-f1-IdI" secondAttribute="trailing" constant="35" id="VVv-NE-qox"/>
                             <constraint firstItem="Lgc-Nh-Hxl" firstAttribute="centerX" secondItem="c8K-Cy-gaq" secondAttribute="centerX" id="Yti-SL-sw1"/>
+                            <constraint firstItem="wpo-Im-y7E" firstAttribute="width" secondItem="Yfb-hf-s75" secondAttribute="width" id="hhc-TT-a1J"/>
+                            <constraint firstItem="qfl-f1-IdI" firstAttribute="top" secondItem="Lgc-Nh-Hxl" secondAttribute="bottom" constant="60" id="iDB-uF-kCj"/>
+                            <constraint firstItem="qfl-f1-IdI" firstAttribute="leading" secondItem="c8K-Cy-gaq" secondAttribute="leading" constant="65" id="x8N-wg-y8E"/>
+                            <constraint firstItem="Ia3-Dj-xyM" firstAttribute="centerX" secondItem="c8K-Cy-gaq" secondAttribute="centerX" id="xGw-b9-low"/>
                             <constraint firstItem="Lgc-Nh-Hxl" firstAttribute="top" secondItem="c8K-Cy-gaq" secondAttribute="top" constant="15" id="y9W-uu-jF8"/>
                         </constraints>
                     </view>
