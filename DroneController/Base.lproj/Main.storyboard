@@ -215,37 +215,71 @@
                                     <action selector="dismiss:" destination="vmY-hA-RBc" eventType="touchUpInside" id="8Fd-PT-fBw"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Setting" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GIF-p1-GVO">
-                                <rect key="frame" x="256" y="15" width="55" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="환경설정" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GIF-p1-GVO">
+                                <rect key="frame" x="254" y="15" width="59" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XB5-nX-dHa">
-                                <rect key="frame" x="37" y="62" width="46" height="30"/>
-                                <state key="normal" title="Button"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XB5-nX-dHa">
+                                <rect key="frame" x="35" y="66" width="139.5" height="80"/>
+                                <color key="backgroundColor" red="0.66030350869999999" green="0.85609208780000001" blue="0.26418053460000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="Zzh-Py-KwC"/>
+                                </constraints>
+                                <state key="normal" title="Control"/>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dpU-ld-zaS">
-                                <rect key="frame" x="261" y="64" width="46" height="30"/>
-                                <state key="normal" title="Button"/>
+                                <rect key="frame" x="214" y="66" width="139" height="80"/>
+                                <color key="backgroundColor" red="0.66030350869999999" green="0.85609208780000001" blue="0.26418053460000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="BxM-W2-HrO"/>
+                                </constraints>
+                                <state key="normal" title="Camera"/>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gFG-UA-JM5">
-                                <rect key="frame" x="402" y="80" width="46" height="30"/>
-                                <state key="normal" title="Button"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gFG-UA-JM5">
+                                <rect key="frame" x="393" y="66" width="139.5" height="80"/>
+                                <color key="backgroundColor" red="0.66030350869999999" green="0.85609208780000001" blue="0.26418053460000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="zcM-Ao-xRU"/>
+                                </constraints>
+                                <state key="normal" title="Alert"/>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yay-pA-064">
-                                <rect key="frame" x="37" y="138" width="46" height="30"/>
-                                <state key="normal" title="Button"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yay-pA-064">
+                                <rect key="frame" x="35" y="176" width="139.5" height="80"/>
+                                <color key="backgroundColor" red="0.66030350869999999" green="0.85609208780000001" blue="0.26418053460000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="User"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n5v-eh-lEX">
+                                <rect key="frame" x="214" y="176" width="139.5" height="80"/>
+                                <color key="backgroundColor" red="0.66030350869999999" green="0.85609208780000001" blue="0.26418053460000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Joystick"/>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="dpU-ld-zaS" firstAttribute="leading" secondItem="XB5-nX-dHa" secondAttribute="trailing" constant="40" id="2iH-o9-QHO"/>
                             <constraint firstItem="Loa-Li-L6o" firstAttribute="top" secondItem="Rwt-M6-UON" secondAttribute="top" constant="10" id="3k3-0Z-ccX"/>
-                            <constraint firstItem="dpU-ld-zaS" firstAttribute="top" secondItem="GIF-p1-GVO" secondAttribute="bottom" constant="28" id="51m-lo-qUU"/>
+                            <constraint firstItem="dpU-ld-zaS" firstAttribute="top" secondItem="GIF-p1-GVO" secondAttribute="bottom" constant="30" id="51m-lo-qUU"/>
+                            <constraint firstItem="n5v-eh-lEX" firstAttribute="width" secondItem="yay-pA-064" secondAttribute="width" id="5Sk-xE-x6E"/>
+                            <constraint firstItem="gFG-UA-JM5" firstAttribute="baseline" secondItem="dpU-ld-zaS" secondAttribute="baseline" id="71c-55-e6x"/>
+                            <constraint firstItem="gFG-UA-JM5" firstAttribute="leading" secondItem="dpU-ld-zaS" secondAttribute="trailing" constant="40" id="8Pe-WT-nHT"/>
+                            <constraint firstItem="n5v-eh-lEX" firstAttribute="height" secondItem="yay-pA-064" secondAttribute="height" id="9kD-9Y-Kyi"/>
                             <constraint firstItem="dpU-ld-zaS" firstAttribute="centerX" secondItem="Rwt-M6-UON" secondAttribute="centerX" id="BX1-Za-XhY"/>
+                            <constraint firstItem="XB5-nX-dHa" firstAttribute="baseline" secondItem="dpU-ld-zaS" secondAttribute="baseline" id="Dt2-SC-pLu"/>
+                            <constraint firstItem="XB5-nX-dHa" firstAttribute="height" secondItem="yay-pA-064" secondAttribute="height" id="GY1-9A-tO0"/>
+                            <constraint firstItem="n5v-eh-lEX" firstAttribute="top" secondItem="dpU-ld-zaS" secondAttribute="bottom" constant="30" id="Gvb-6x-k9d"/>
+                            <constraint firstItem="yay-pA-064" firstAttribute="top" secondItem="XB5-nX-dHa" secondAttribute="bottom" constant="30" id="LPM-df-dOA"/>
+                            <constraint firstItem="XB5-nX-dHa" firstAttribute="width" secondItem="yay-pA-064" secondAttribute="width" id="Seg-6J-bnb"/>
                             <constraint firstItem="Loa-Li-L6o" firstAttribute="leading" secondItem="Rwt-M6-UON" secondAttribute="leading" constant="30" id="XOj-uY-LzR"/>
                             <constraint firstItem="GIF-p1-GVO" firstAttribute="centerX" secondItem="Rwt-M6-UON" secondAttribute="centerX" id="alT-dG-N9m"/>
+                            <constraint firstAttribute="trailing" secondItem="gFG-UA-JM5" secondAttribute="trailing" constant="35" id="gGf-bZ-vXh"/>
+                            <constraint firstItem="n5v-eh-lEX" firstAttribute="centerX" secondItem="Rwt-M6-UON" secondAttribute="centerX" id="gHW-rk-LNh"/>
+                            <constraint firstItem="XB5-nX-dHa" firstAttribute="leading" secondItem="Rwt-M6-UON" secondAttribute="leading" constant="35" id="h1L-VP-R05"/>
+                            <constraint firstItem="dpU-ld-zaS" firstAttribute="width" secondItem="gFG-UA-JM5" secondAttribute="width" id="o1d-4r-de5"/>
+                            <constraint firstItem="yay-pA-064" firstAttribute="centerX" secondItem="XB5-nX-dHa" secondAttribute="centerX" id="qGH-DS-BZo"/>
                             <constraint firstItem="GIF-p1-GVO" firstAttribute="top" secondItem="Rwt-M6-UON" secondAttribute="top" constant="15" id="qs0-Du-lMC"/>
+                            <constraint firstItem="XB5-nX-dHa" firstAttribute="width" secondItem="dpU-ld-zaS" secondAttribute="width" id="r80-f5-ZHk"/>
                         </constraints>
                     </view>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
