@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		296BA8E91CFDCC5800062043 /* Conn_BLTHVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 296BA8E81CFDCC5700062043 /* Conn_BLTHVC.swift */; };
+		296BA8EB1CFDCC8000062043 /* Conn_TrimmVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 296BA8EA1CFDCC8000062043 /* Conn_TrimmVC.swift */; };
+		296BA8ED1CFDCC9B00062043 /* Conn_DroneVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 296BA8EC1CFDCC9B00062043 /* Conn_DroneVC.swift */; };
+		296BA8EF1CFDCCB900062043 /* Set_SensiVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 296BA8EE1CFDCCB900062043 /* Set_SensiVC.swift */; };
+		296BA8F11CFDCCCE00062043 /* Set_AlertVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 296BA8F01CFDCCCE00062043 /* Set_AlertVC.swift */; };
+		296BA8F31CFDCCE100062043 /* Set_UserSetVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 296BA8F21CFDCCE100062043 /* Set_UserSetVC.swift */; };
+		296BA8F51CFDCCF200062043 /* Set_JoystickVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 296BA8F41CFDCCF200062043 /* Set_JoystickVC.swift */; };
 		299F812D1CF6A83900F68664 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 299F812C1CF6A83900F68664 /* AppDelegate.swift */; };
 		299F812F1CF6A83900F68664 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 299F812E1CF6A83900F68664 /* ViewController.swift */; };
 		299F81321CF6A83900F68664 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 299F81301CF6A83900F68664 /* Main.storyboard */; };
@@ -37,6 +44,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		296BA8E81CFDCC5700062043 /* Conn_BLTHVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Conn_BLTHVC.swift; sourceTree = "<group>"; };
+		296BA8EA1CFDCC8000062043 /* Conn_TrimmVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Conn_TrimmVC.swift; sourceTree = "<group>"; };
+		296BA8EC1CFDCC9B00062043 /* Conn_DroneVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Conn_DroneVC.swift; sourceTree = "<group>"; };
+		296BA8EE1CFDCCB900062043 /* Set_SensiVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Set_SensiVC.swift; sourceTree = "<group>"; };
+		296BA8F01CFDCCCE00062043 /* Set_AlertVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Set_AlertVC.swift; sourceTree = "<group>"; };
+		296BA8F21CFDCCE100062043 /* Set_UserSetVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Set_UserSetVC.swift; sourceTree = "<group>"; };
+		296BA8F41CFDCCF200062043 /* Set_JoystickVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Set_JoystickVC.swift; sourceTree = "<group>"; };
 		299F81291CF6A83800F68664 /* DroneController.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DroneController.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		299F812C1CF6A83900F68664 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		299F812E1CF6A83900F68664 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -112,6 +126,13 @@
 				299F81381CF6A83900F68664 /* LaunchScreen.storyboard */,
 				299F813B1CF6A83900F68664 /* Info.plist */,
 				299F81331CF6A83900F68664 /* DroneController.xcdatamodeld */,
+				296BA8E81CFDCC5700062043 /* Conn_BLTHVC.swift */,
+				296BA8EA1CFDCC8000062043 /* Conn_TrimmVC.swift */,
+				296BA8EC1CFDCC9B00062043 /* Conn_DroneVC.swift */,
+				296BA8EE1CFDCCB900062043 /* Set_SensiVC.swift */,
+				296BA8F01CFDCCCE00062043 /* Set_AlertVC.swift */,
+				296BA8F21CFDCCE100062043 /* Set_UserSetVC.swift */,
+				296BA8F41CFDCCF200062043 /* Set_JoystickVC.swift */,
 			);
 			path = DroneController;
 			sourceTree = "<group>";
@@ -267,8 +288,15 @@
 			files = (
 				299F81601CF7F1E400F68664 /* MenuConnTrimVC.swift in Sources */,
 				299F812F1CF6A83900F68664 /* ViewController.swift in Sources */,
+				296BA8EB1CFDCC8000062043 /* Conn_TrimmVC.swift in Sources */,
+				296BA8F51CFDCCF200062043 /* Set_JoystickVC.swift in Sources */,
+				296BA8EF1CFDCCB900062043 /* Set_SensiVC.swift in Sources */,
+				296BA8F31CFDCCE100062043 /* Set_UserSetVC.swift in Sources */,
+				296BA8ED1CFDCC9B00062043 /* Conn_DroneVC.swift in Sources */,
 				299F81351CF6A83900F68664 /* DroneController.xcdatamodeld in Sources */,
 				299F815E1CF7EC0600F68664 /* MenuSettingVC.swift in Sources */,
+				296BA8E91CFDCC5800062043 /* Conn_BLTHVC.swift in Sources */,
+				296BA8F11CFDCCCE00062043 /* Set_AlertVC.swift in Sources */,
 				299F812D1CF6A83900F68664 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
