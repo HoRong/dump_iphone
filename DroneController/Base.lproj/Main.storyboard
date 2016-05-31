@@ -147,10 +147,10 @@
             </objects>
             <point key="canvasLocation" x="28" y="295"/>
         </scene>
-        <!--View Controller-->
+        <!--Conn TrimmVC-->
         <scene sceneID="cxr-60-fPt">
             <objects>
-                <viewController storyboardIdentifier="Conn_TrimmVC" id="mro-69-7T4" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Conn_TrimmVC" id="mro-69-7T4" customClass="Conn_TrimmVC" customModule="DroneController" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="MJz-oA-SJA"/>
                         <viewControllerLayoutGuide type="bottom" id="jjG-J7-bUc"/>
@@ -300,10 +300,10 @@
             </objects>
             <point key="canvasLocation" x="1673" y="-402"/>
         </scene>
-        <!--View Controller-->
+        <!--ConnBLTHVC-->
         <scene sceneID="Wcz-ir-Sie">
             <objects>
-                <viewController storyboardIdentifier="Conn_BLTHVC" id="b9O-2O-evU" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Conn_BLTHVC" id="b9O-2O-evU" customClass="Conn_BLTHVC" customModule="DroneController" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="jJH-xq-5SH"/>
                         <viewControllerLayoutGuide type="bottom" id="EXp-hw-1Xr"/>
@@ -326,7 +326,7 @@
                                 </constraints>
                                 <state key="normal" backgroundImage="menu_icon_back"/>
                                 <connections>
-                                    <action selector="dismiss:" destination="b9O-2O-evU" eventType="touchUpInside" id="dyO-Ny-NQJ"/>
+                                    <action selector="dismiss:" destination="b9O-2O-evU" eventType="touchUpInside" id="pMB-wZ-N8R"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="블루투스 연결설정" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UlI-6R-pST">
@@ -401,10 +401,10 @@
             </objects>
             <point key="canvasLocation" x="1673" y="-29"/>
         </scene>
-        <!--View Controller-->
+        <!--Conn DroneVC-->
         <scene sceneID="vI2-45-JYy">
             <objects>
-                <viewController id="TVG-UT-wnq" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Conn_DroneVC" id="TVG-UT-wnq" customClass="Conn_DroneVC" customModule="DroneController" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Xes-Jp-vSR"/>
                         <viewControllerLayoutGuide type="bottom" id="trq-yn-uhq"/>
@@ -422,6 +422,7 @@
                                 <state key="normal" backgroundImage="menu_icon_back"/>
                                 <connections>
                                     <action selector="dismiss:" destination="b9O-2O-evU" eventType="touchUpInside" id="f2A-4U-q0B"/>
+                                    <action selector="dismiss:" destination="TVG-UT-wnq" eventType="touchUpInside" id="vXP-5Y-zwQ"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="조종 모델 선택" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vG0-vy-fI8">
@@ -599,10 +600,10 @@
             </objects>
             <point key="canvasLocation" x="228" y="844"/>
         </scene>
-        <!--View Controller-->
+        <!--Set AlertVC-->
         <scene sceneID="OOH-RV-Yle">
             <objects>
-                <viewController id="ixY-EX-2uT" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Set_AlertVC" id="ixY-EX-2uT" customClass="Set_AlertVC" customModule="DroneController" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="zSy-Sy-wCZ"/>
                         <viewControllerLayoutGuide type="bottom" id="joX-3s-geo"/>
@@ -673,6 +674,9 @@
                                     <constraint firstAttribute="height" constant="28" id="z0D-Xe-4MG"/>
                                 </constraints>
                                 <state key="normal" backgroundImage="menu_icon_back"/>
+                                <connections>
+                                    <action selector="dismiss:" destination="ixY-EX-2uT" eventType="touchUpInside" id="wYB-G2-x5X"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QWP-rT-3uf">
                                 <rect key="frame" x="518" y="10" width="30" height="28"/>
@@ -720,10 +724,10 @@
             </objects>
             <point key="canvasLocation" x="925" y="913"/>
         </scene>
-        <!--View Controller-->
+        <!--Set JoystickVC-->
         <scene sceneID="Ps2-K6-w7M">
             <objects>
-                <viewController id="vXx-i2-Y1g" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Set_JoystickVC" id="vXx-i2-Y1g" customClass="Set_JoystickVC" customModule="DroneController" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="o4l-3G-DSy"/>
                         <viewControllerLayoutGuide type="bottom" id="w5h-Kf-BdS"/>
@@ -790,6 +794,9 @@
                                     <constraint firstAttribute="height" constant="28" id="ucn-dl-aQM"/>
                                 </constraints>
                                 <state key="normal" backgroundImage="menu_icon_back"/>
+                                <connections>
+                                    <action selector="dismiss:" destination="vXx-i2-Y1g" eventType="touchUpInside" id="3Hf-4d-L9I"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
@@ -825,10 +832,10 @@
             </objects>
             <point key="canvasLocation" x="935" y="1301"/>
         </scene>
-        <!--View Controller-->
+        <!--Set SensiVC-->
         <scene sceneID="cFi-gH-72k">
             <objects>
-                <viewController id="HZD-s6-xh7" sceneMemberID="viewController">
+                <viewController id="HZD-s6-xh7" customClass="Set_SensiVC" customModule="DroneController" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Ej7-Gn-cfB"/>
                         <viewControllerLayoutGuide type="bottom" id="FTJ-wA-LmM"/>
@@ -905,6 +912,9 @@
                                     <constraint firstAttribute="height" constant="28" id="y3Y-qa-SyD"/>
                                 </constraints>
                                 <state key="normal" backgroundImage="menu_icon_back"/>
+                                <connections>
+                                    <action selector="dismiss:" destination="HZD-s6-xh7" eventType="touchUpInside" id="6Qo-eO-5bt"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
@@ -1000,7 +1010,7 @@
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <state key="normal" title="트리밍"/>
                                 <connections>
-                                    <segue destination="mro-69-7T4" kind="presentation" id="AZF-yw-Pw2"/>
+                                    <segue destination="mro-69-7T4" kind="presentation" animates="NO" id="AZF-yw-Pw2"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="byP-II-uht">
