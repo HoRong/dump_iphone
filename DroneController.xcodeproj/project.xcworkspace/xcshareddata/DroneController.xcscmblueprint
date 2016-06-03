@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "FB3E28F62D55C5088226BE54557D3D62040DCA12",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "FB3E28F62D55C5088226BE54557D3D62040DCA12" : 0,
+    "CAD2E08F621A4108E41C0E5E3AFD4A73EFA08980" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "0300519E-0C6D-4EF6-962A-7C703F0A9B50",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "FB3E28F62D55C5088226BE54557D3D62040DCA12" : "DroneController\/",
+    "CAD2E08F621A4108E41C0E5E3AFD4A73EFA08980" : "Swift-SpriteKit-Analog-Stick\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "DroneController",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "DroneController.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/MitrophD\/Swift-SpriteKit-Analog-Stick.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "CAD2E08F621A4108E41C0E5E3AFD4A73EFA08980"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/HoRong\/dump_iphone.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "FB3E28F62D55C5088226BE54557D3D62040DCA12"
+    }
+  ]
+}
