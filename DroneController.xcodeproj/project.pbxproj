@@ -14,8 +14,8 @@
 		296BA8F11CFDCCCE00062043 /* Set_AlertVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 296BA8F01CFDCCCE00062043 /* Set_AlertVC.swift */; };
 		296BA8F31CFDCCE100062043 /* Set_UserSetVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 296BA8F21CFDCCE100062043 /* Set_UserSetVC.swift */; };
 		296BA8F51CFDCCF200062043 /* Set_JoystickVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 296BA8F41CFDCCF200062043 /* Set_JoystickVC.swift */; };
-		296BA8F91CFEFAAC00062043 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 296BA8F81CFEFAAC00062043 /* GameScene.swift */; };
-		296BA9191CFF0FB100062043 /* AnalogJoystick.swift in Sources */ = {isa = PBXBuildFile; fileRef = 296BA9181CFF0FB100062043 /* AnalogJoystick.swift */; };
+		296BA8F91CFEFAAC00062043 /* JoystickScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 296BA8F81CFEFAAC00062043 /* JoystickScene.swift */; };
+		296BA9191CFF0FB100062043 /* Joystick.swift in Sources */ = {isa = PBXBuildFile; fileRef = 296BA9181CFF0FB100062043 /* Joystick.swift */; };
 		299F812D1CF6A83900F68664 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 299F812C1CF6A83900F68664 /* AppDelegate.swift */; };
 		299F812F1CF6A83900F68664 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 299F812E1CF6A83900F68664 /* ViewController.swift */; };
 		299F81321CF6A83900F68664 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 299F81301CF6A83900F68664 /* Main.storyboard */; };
@@ -53,8 +53,8 @@
 		296BA8F01CFDCCCE00062043 /* Set_AlertVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Set_AlertVC.swift; sourceTree = "<group>"; };
 		296BA8F21CFDCCE100062043 /* Set_UserSetVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Set_UserSetVC.swift; sourceTree = "<group>"; };
 		296BA8F41CFDCCF200062043 /* Set_JoystickVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Set_JoystickVC.swift; sourceTree = "<group>"; };
-		296BA8F81CFEFAAC00062043 /* GameScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
-		296BA9181CFF0FB100062043 /* AnalogJoystick.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnalogJoystick.swift; sourceTree = "<group>"; };
+		296BA8F81CFEFAAC00062043 /* JoystickScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JoystickScene.swift; sourceTree = "<group>"; };
+		296BA9181CFF0FB100062043 /* Joystick.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Joystick.swift; sourceTree = "<group>"; };
 		299F81291CF6A83800F68664 /* DroneController.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DroneController.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		299F812C1CF6A83900F68664 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		299F812E1CF6A83900F68664 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -144,8 +144,8 @@
 			children = (
 				296BA8FB1CFEFD9300062043 /* SettingVC */,
 				296BA8FA1CFEFD6500062043 /* ConnectVC */,
-				296BA9181CFF0FB100062043 /* AnalogJoystick.swift */,
-				296BA8F81CFEFAAC00062043 /* GameScene.swift */,
+				296BA9181CFF0FB100062043 /* Joystick.swift */,
+				296BA8F81CFEFAAC00062043 /* JoystickScene.swift */,
 				299F81611CFC6EB700F68664 /* Assets.xcassets */,
 				299F812C1CF6A83900F68664 /* AppDelegate.swift */,
 				299F812E1CF6A83900F68664 /* ViewController.swift */,
@@ -316,8 +316,8 @@
 				296BA8F31CFDCCE100062043 /* Set_UserSetVC.swift in Sources */,
 				296BA8ED1CFDCC9B00062043 /* Conn_DroneVC.swift in Sources */,
 				299F81351CF6A83900F68664 /* DroneController.xcdatamodeld in Sources */,
-				296BA9191CFF0FB100062043 /* AnalogJoystick.swift in Sources */,
-				296BA8F91CFEFAAC00062043 /* GameScene.swift in Sources */,
+				296BA9191CFF0FB100062043 /* Joystick.swift in Sources */,
+				296BA8F91CFEFAAC00062043 /* JoystickScene.swift in Sources */,
 				299F815E1CF7EC0600F68664 /* MenuSettingVC.swift in Sources */,
 				296BA8E91CFDCC5800062043 /* Conn_BLTHVC.swift in Sources */,
 				296BA8F11CFDCCCE00062043 /* Set_AlertVC.swift in Sources */,
