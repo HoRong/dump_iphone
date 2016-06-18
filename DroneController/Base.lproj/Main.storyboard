@@ -332,9 +332,6 @@
                                     <constraint firstAttribute="height" constant="28" id="lZ5-dq-xnJ"/>
                                 </constraints>
                                 <state key="normal" backgroundImage="menu_icon_back"/>
-                                <connections>
-                                    <action selector="dismiss:" destination="b9O-2O-evU" eventType="touchUpInside" id="35Y-LI-1fO"/>
-                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="블루투스 연결설정" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UlI-6R-pST">
                                 <rect key="frame" x="222" y="15" width="123" height="21"/>
@@ -359,7 +356,7 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <action selector="bluetoothScan:" destination="b9O-2O-evU" eventType="touchUpInside" id="zmr-BJ-5An"/>
+                                    <action selector="scanBluetooth:" destination="b9O-2O-evU" eventType="touchUpInside" id="W4x-mp-P6Z"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="기본 ID" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oUu-MJ-qEE">
@@ -415,7 +412,7 @@
                                             <rect key="frame" x="0.0" y="0.0" width="442" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6bC-Hj-b5N">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" restorationIdentifier="test" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6bC-Hj-b5N">
                                                     <rect key="frame" x="27" y="11" width="42" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
