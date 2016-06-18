@@ -36,6 +36,8 @@ class Conn_BLTH: UIViewController,UITableViewDataSource, UITableViewDelegate, Bl
     
     func serialIsReady(peripheral: CBPeripheral) {
        print("test " + "connect device 11")
+        
+         serial.sendMessageToDevice("send init data")
       
     }
     
@@ -81,7 +83,7 @@ class Conn_BLTH: UIViewController,UITableViewDataSource, UITableViewDelegate, Bl
         selectedPeripheral = peripherals[indexPath.row].peripheral
         serial.connectToPeripheral(selectedPeripheral!)
         
-        serial.sendMessageToDevice("send init data")
+       
     }
     
     func serialDidDiscoverPeripheral(peripheral: CBPeripheral, RSSI: NSNumber?) {
