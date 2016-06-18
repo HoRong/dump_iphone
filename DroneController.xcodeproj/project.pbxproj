@@ -7,7 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		296BA8E91CFDCC5800062043 /* Conn_BLTHVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 296BA8E81CFDCC5700062043 /* Conn_BLTHVC.swift */; };
+		2954C8CB1D1024C90013335F /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2954C8CA1D1024C90013335F /* CoreBluetooth.framework */; };
+		2954C8CD1D10251C0013335F /* BluetoothSerial.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2954C8CC1D10251C0013335F /* BluetoothSerial.swift */; };
+		2954C8D31D102CE80013335F /* Conn_BLTH.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2954C8D21D102CE80013335F /* Conn_BLTH.swift */; };
 		296BA8EB1CFDCC8000062043 /* Conn_TrimmVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 296BA8EA1CFDCC8000062043 /* Conn_TrimmVC.swift */; };
 		296BA8ED1CFDCC9B00062043 /* Conn_DroneVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 296BA8EC1CFDCC9B00062043 /* Conn_DroneVC.swift */; };
 		296BA8EF1CFDCCB900062043 /* Set_SensiVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 296BA8EE1CFDCCB900062043 /* Set_SensiVC.swift */; };
@@ -46,7 +48,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		296BA8E81CFDCC5700062043 /* Conn_BLTHVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Conn_BLTHVC.swift; sourceTree = "<group>"; };
+		2954C8CA1D1024C90013335F /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
+		2954C8CC1D10251C0013335F /* BluetoothSerial.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BluetoothSerial.swift; sourceTree = "<group>"; };
+		2954C8D21D102CE80013335F /* Conn_BLTH.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Conn_BLTH.swift; sourceTree = "<group>"; };
 		296BA8EA1CFDCC8000062043 /* Conn_TrimmVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Conn_TrimmVC.swift; sourceTree = "<group>"; };
 		296BA8EC1CFDCC9B00062043 /* Conn_DroneVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Conn_DroneVC.swift; sourceTree = "<group>"; };
 		296BA8EE1CFDCCB900062043 /* Set_SensiVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Set_SensiVC.swift; sourceTree = "<group>"; };
@@ -78,6 +82,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2954C8CB1D1024C90013335F /* CoreBluetooth.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -98,12 +103,30 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2954C8CE1D1025250013335F /* BluetoothService */ = {
+			isa = PBXGroup;
+			children = (
+				2954C8CC1D10251C0013335F /* BluetoothSerial.swift */,
+			);
+			name = BluetoothService;
+			sourceTree = "<group>";
+		};
+		2954C8CF1D10253C0013335F /* Joystick */ = {
+			isa = PBXGroup;
+			children = (
+				296BA9181CFF0FB100062043 /* Joystick.swift */,
+				296BA8F81CFEFAAC00062043 /* JoystickScene.swift */,
+			);
+			name = Joystick;
+			sourceTree = "<group>";
+		};
 		296BA8FA1CFEFD6500062043 /* ConnectVC */ = {
 			isa = PBXGroup;
 			children = (
-				296BA8E81CFDCC5700062043 /* Conn_BLTHVC.swift */,
+				2954C8CE1D1025250013335F /* BluetoothService */,
 				296BA8EA1CFDCC8000062043 /* Conn_TrimmVC.swift */,
 				296BA8EC1CFDCC9B00062043 /* Conn_DroneVC.swift */,
+				2954C8D21D102CE80013335F /* Conn_BLTH.swift */,
 			);
 			name = ConnectVC;
 			sourceTree = "<group>";
@@ -122,6 +145,7 @@
 		299F81201CF6A83800F68664 = {
 			isa = PBXGroup;
 			children = (
+				2954C8CA1D1024C90013335F /* CoreBluetooth.framework */,
 				299F812B1CF6A83900F68664 /* DroneController */,
 				299F81431CF6A83900F68664 /* DroneControllerTests */,
 				299F814E1CF6A83900F68664 /* DroneControllerUITests */,
@@ -142,10 +166,9 @@
 		299F812B1CF6A83900F68664 /* DroneController */ = {
 			isa = PBXGroup;
 			children = (
+				2954C8CF1D10253C0013335F /* Joystick */,
 				296BA8FB1CFEFD9300062043 /* SettingVC */,
 				296BA8FA1CFEFD6500062043 /* ConnectVC */,
-				296BA9181CFF0FB100062043 /* Joystick.swift */,
-				296BA8F81CFEFAAC00062043 /* JoystickScene.swift */,
 				299F81611CFC6EB700F68664 /* Assets.xcassets */,
 				299F812C1CF6A83900F68664 /* AppDelegate.swift */,
 				299F812E1CF6A83900F68664 /* ViewController.swift */,
@@ -245,6 +268,7 @@
 				TargetAttributes = {
 					299F81281CF6A83800F68664 = {
 						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = MZS9J73P37;
 					};
 					299F813F1CF6A83900F68664 = {
 						CreatedOnToolsVersion = 7.3;
@@ -313,15 +337,16 @@
 				296BA8EB1CFDCC8000062043 /* Conn_TrimmVC.swift in Sources */,
 				296BA8F51CFDCCF200062043 /* Set_JoystickVC.swift in Sources */,
 				296BA8EF1CFDCCB900062043 /* Set_SensiVC.swift in Sources */,
+				2954C8D31D102CE80013335F /* Conn_BLTH.swift in Sources */,
 				296BA8F31CFDCCE100062043 /* Set_UserSetVC.swift in Sources */,
 				296BA8ED1CFDCC9B00062043 /* Conn_DroneVC.swift in Sources */,
 				299F81351CF6A83900F68664 /* DroneController.xcdatamodeld in Sources */,
 				296BA9191CFF0FB100062043 /* Joystick.swift in Sources */,
 				296BA8F91CFEFAAC00062043 /* JoystickScene.swift in Sources */,
 				299F815E1CF7EC0600F68664 /* MenuSettingVC.swift in Sources */,
-				296BA8E91CFDCC5800062043 /* Conn_BLTHVC.swift in Sources */,
 				296BA8F11CFDCCCE00062043 /* Set_AlertVC.swift in Sources */,
 				299F812D1CF6A83900F68664 /* AppDelegate.swift in Sources */,
+				2954C8CD1D10251C0013335F /* BluetoothSerial.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -465,10 +490,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = DroneController/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.Aerodyn.DroneController;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -476,10 +504,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = DroneController/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.Aerodyn.DroneController;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
