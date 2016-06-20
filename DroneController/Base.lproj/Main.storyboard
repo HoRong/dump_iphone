@@ -365,12 +365,6 @@
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ObH-ks-30e">
-                                <rect key="frame" x="117" y="0.0" width="61" height="60"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Oig-RW-8Cs">
                                 <rect key="frame" x="40" y="56" width="489" height="50"/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
@@ -491,7 +485,6 @@
                     <connections>
                         <outlet property="btn_bluetooth" destination="AEm-OB-eEW" id="uwK-Zy-LxK"/>
                         <outlet property="tableView" destination="1p0-RO-u3D" id="5sk-1s-MYg"/>
-                        <outlet property="testLabel" destination="ObH-ks-30e" id="f4z-Sc-hXh"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sIE-QK-UWV" userLabel="First Responder" sceneMemberID="firstResponder"/>
