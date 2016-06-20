@@ -618,6 +618,9 @@
                                     <constraint firstAttribute="height" constant="80" id="BxM-W2-HrO"/>
                                 </constraints>
                                 <state key="normal" title="Camera"/>
+                                <connections>
+                                    <action selector="incompleteFunc:" destination="vmY-hA-RBc" eventType="touchUpInside" id="SO1-Wt-Ex8"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gFG-UA-JM5">
                                 <rect key="frame" x="394" y="66" width="139" height="80"/>
@@ -634,6 +637,9 @@
                                 <rect key="frame" x="35" y="176" width="139.5" height="80"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <state key="normal" title="User"/>
+                                <connections>
+                                    <action selector="incompleteFunc:" destination="vmY-hA-RBc" eventType="touchUpInside" id="dqZ-cf-HNc"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n5v-eh-lEX">
                                 <rect key="frame" x="214" y="176" width="140" height="80"/>
@@ -1121,6 +1127,9 @@
                                     <constraint firstAttribute="height" constant="80" id="hbi-Us-mqm"/>
                                 </constraints>
                                 <state key="normal" title="와이파이"/>
+                                <connections>
+                                    <action selector="incompleteFuc:" destination="ih2-La-M0X" eventType="touchUpInside" id="1SU-Mn-Lwa"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7xC-YN-ZGh">
                                 <rect key="frame" x="35" y="176" width="139.5" height="80"/>

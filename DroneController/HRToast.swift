@@ -205,7 +205,7 @@ extension UIView {
         
         let activityView = UIView(frame: CGRectMake(0, 0, HRToastActivityWidth, HRToastActivityHeight))
         activityView.center = self.centerPointForPosition(pos, toast: activityView)
-        activityView.backgroundColor = UIView.hr_toastThemeColor().colorWithAlphaComponent(HRToastOpacity)
+        activityView.backgroundColor = UIColor.blackColor()
         activityView.alpha = 0.0
         activityView.autoresizingMask = ([.FlexibleLeftMargin, .FlexibleTopMargin, .FlexibleRightMargin, .FlexibleBottomMargin])
         activityView.layer.cornerRadius = HRToastCornerRadius

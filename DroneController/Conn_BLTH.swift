@@ -18,9 +18,6 @@ class Conn_BLTH: UIViewController,UITableViewDataSource, UITableViewDelegate, Bl
         
         serial = BluetoothSerial(delegate: self)
         serial.writeType = .WithoutResponse
-        
-        UIView.hr_setToastThemeColor(color: UIColor.blackColor())
-
     }
     
     @IBAction func dismiss(sender: AnyObject) {

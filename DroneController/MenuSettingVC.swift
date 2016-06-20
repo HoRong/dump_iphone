@@ -6,6 +6,9 @@ import UIKit
 
 
 class MenuSettingVC: UIViewController {
+    @IBAction func incompleteFunc(sender: AnyObject) {
+        view.makeToast(message: "추후 추가될 기능입니다.")
+    }
 
     @IBAction func dismiss(sender: AnyObject) {
         
