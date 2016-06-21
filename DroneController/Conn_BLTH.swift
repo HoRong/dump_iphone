@@ -14,10 +14,8 @@ class Conn_BLTH: UIViewController,UITableViewDataSource, UITableViewDelegate, Bl
     override func viewDidLoad() {
         super.viewDidLoad()
       
+        serial.delegate = self
         tableView.tableFooterView = UIView(frame: CGRectZero)
-        
-        serial = BluetoothSerial(delegate: self)
-        serial.writeType = .WithoutResponse
     }
     
     @IBAction func dismiss(sender: AnyObject) {
