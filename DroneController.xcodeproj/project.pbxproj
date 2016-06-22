@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		2904244D1D1828F300DAB66D /* HRToast.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2904244C1D1828F300DAB66D /* HRToast.swift */; };
+		2904244F1D18F8C200DAB66D /* DroneState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2904244E1D18F8C200DAB66D /* DroneState.swift */; };
 		2954C8CB1D1024C90013335F /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2954C8CA1D1024C90013335F /* CoreBluetooth.framework */; };
 		2954C8CD1D10251C0013335F /* BluetoothSerial.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2954C8CC1D10251C0013335F /* BluetoothSerial.swift */; };
 		2954C8D31D102CE80013335F /* Conn_BLTH.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2954C8D21D102CE80013335F /* Conn_BLTH.swift */; };
@@ -50,6 +51,7 @@
 
 /* Begin PBXFileReference section */
 		2904244C1D1828F300DAB66D /* HRToast.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HRToast.swift; sourceTree = "<group>"; };
+		2904244E1D18F8C200DAB66D /* DroneState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DroneState.swift; sourceTree = "<group>"; };
 		2954C8CA1D1024C90013335F /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
 		2954C8CC1D10251C0013335F /* BluetoothSerial.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BluetoothSerial.swift; sourceTree = "<group>"; };
 		2954C8D21D102CE80013335F /* Conn_BLTH.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Conn_BLTH.swift; sourceTree = "<group>"; };
@@ -181,6 +183,7 @@
 				296BA8FB1CFEFD9300062043 /* SettingVC */,
 				296BA8FA1CFEFD6500062043 /* ConnectVC */,
 				299F81611CFC6EB700F68664 /* Assets.xcassets */,
+				2904244E1D18F8C200DAB66D /* DroneState.swift */,
 				299F812C1CF6A83900F68664 /* AppDelegate.swift */,
 				299F812E1CF6A83900F68664 /* ViewController.swift */,
 				299F815F1CF7F1E400F68664 /* MenuConnTrimVC.swift */,
@@ -346,6 +349,7 @@
 				299F81601CF7F1E400F68664 /* MenuConnTrimVC.swift in Sources */,
 				299F812F1CF6A83900F68664 /* ViewController.swift in Sources */,
 				296BA8EB1CFDCC8000062043 /* Conn_TrimmVC.swift in Sources */,
+				2904244F1D18F8C200DAB66D /* DroneState.swift in Sources */,
 				296BA8F51CFDCCF200062043 /* Set_JoystickVC.swift in Sources */,
 				296BA8EF1CFDCCB900062043 /* Set_SensiVC.swift in Sources */,
 				2954C8D31D102CE80013335F /* Conn_BLTH.swift in Sources */,

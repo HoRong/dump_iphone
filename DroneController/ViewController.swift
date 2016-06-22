@@ -46,7 +46,7 @@ class ViewController: UIViewController, BluetoothSerialDelegate {
         tTimer = NSTimer.scheduledTimerWithTimeInterval(1, target: self, selector: #selector(ViewController.setTimestamp), userInfo: nil, repeats: true)
         
         if(serial.isReady) {
-            bTimer = NSTimer.scheduledTimerWithTimeInterval(0.1, target: self, selector: #selector(ViewController.sendJoysticState), userInfo: nil, repeats: true)
+            bTimer = NSTimer.scheduledTimerWithTimeInterval(0.01, target: self, selector: #selector(ViewController.sendJoysticState), userInfo: nil, repeats: true)
             print("timer start")
         }
         
@@ -64,8 +64,6 @@ class ViewController: UIViewController, BluetoothSerialDelegate {
     }
     
     func sendJoysticState(){
-
-        print(1);
         let jdata = scene.getJoystickData()
         serial.sendMessageToDevice("\(jdata)");
         print(jdata)
