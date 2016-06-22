@@ -79,7 +79,7 @@
                                         </state>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="13.6 m/s" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2RI-qc-IJg">
-                                        <rect key="frame" x="42" y="7" width="51.5" height="16"/>
+                                        <rect key="frame" x="42" y="7" width="52" height="16"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
@@ -92,7 +92,7 @@
                                         </constraints>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="N 38.6325 W26.5142" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GsJ-3n-7hh">
-                                        <rect key="frame" x="437" y="7" width="121" height="14.5"/>
+                                        <rect key="frame" x="437" y="7" width="121" height="15"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
@@ -523,59 +523,106 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="upq-HJ-cRS">
-                                <rect key="frame" x="296" y="71" width="108.5" height="80"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <state key="normal" title="Drone">
-                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FTj-xz-eTt">
-                                <rect key="frame" x="430" y="71" width="108" height="80"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <state key="normal" title="Drone">
-                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fEQ-he-cCB">
-                                <rect key="frame" x="163" y="71" width="108" height="80"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <state key="normal" title="Drone">
-                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P8X-Fc-TiM">
-                                <rect key="frame" x="30" y="71" width="108.5" height="80"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P8X-Fc-TiM">
+                                <rect key="frame" x="30" y="71" width="109" height="80"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="80" id="cXa-eZ-Vid"/>
                                 </constraints>
-                                <state key="normal" title="Drone">
-                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <inset key="titleEdgeInsets" minX="0.0" minY="17" maxX="0.0" maxY="-21"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="6" maxX="0.0" maxY="20"/>
+                                <state key="normal" title="ㅇㄴㅁㅇㄴㅁ" image="connect_icon_dron">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Drone" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8hq-Z8-ujL">
+                                <rect key="frame" x="61" y="130" width="47" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="highlightedColor"/>
+                                <size key="shadowOffset" width="0.0" height="0.0"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Dh-eT-tIa">
+                                <rect key="frame" x="174" y="71" width="103" height="80"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="6LW-XN-AII"/>
+                                </constraints>
+                                <inset key="titleEdgeInsets" minX="0.0" minY="17" maxX="0.0" maxY="-21"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="6" maxX="0.0" maxY="20"/>
+                                <state key="normal" title="ㅇㄴㅁㅇㄴㅁ" image="connect_icon_dron">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Drone" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gA8-uE-2AA">
+                                <rect key="frame" x="202" y="130" width="47" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="highlightedColor"/>
+                                <size key="shadowOffset" width="0.0" height="0.0"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7iK-CN-b9j">
+                                <rect key="frame" x="311" y="71" width="103" height="80"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="9p1-ag-NEF"/>
+                                    <constraint firstAttribute="width" constant="103" id="XrD-lT-oTq"/>
+                                </constraints>
+                                <inset key="titleEdgeInsets" minX="0.0" minY="17" maxX="0.0" maxY="-21"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="6" maxX="0.0" maxY="20"/>
+                                <state key="normal" title="ㅇㄴㅁㅇㄴㅁ" image="connect_icon_dron">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DDr-ie-u7d">
+                                <rect key="frame" x="450" y="71" width="103" height="80"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="itR-Nw-Hme"/>
+                                </constraints>
+                                <inset key="titleEdgeInsets" minX="0.0" minY="17" maxX="0.0" maxY="-21"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="6" maxX="0.0" maxY="20"/>
+                                <state key="normal" title="ㅇㄴㅁㅇㄴㅁ" image="connect_icon_dron">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Drone" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kIS-6M-nAI">
+                                <rect key="frame" x="478" y="130" width="47" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="highlightedColor"/>
+                                <size key="shadowOffset" width="0.0" height="0.0"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Drone" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZOi-4M-Cos">
+                                <rect key="frame" x="339" y="130" width="47" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="highlightedColor"/>
+                                <size key="shadowOffset" width="0.0" height="0.0"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="FTj-xz-eTt" firstAttribute="centerY" secondItem="upq-HJ-cRS" secondAttribute="centerY" id="2O0-vB-RR7"/>
-                            <constraint firstAttribute="trailing" secondItem="FTj-xz-eTt" secondAttribute="trailing" constant="30" id="Ax1-wC-dhe"/>
-                            <constraint firstItem="fEQ-he-cCB" firstAttribute="centerY" secondItem="P8X-Fc-TiM" secondAttribute="centerY" id="D4b-sJ-47O"/>
-                            <constraint firstItem="FTj-xz-eTt" firstAttribute="height" secondItem="P8X-Fc-TiM" secondAttribute="height" id="H6C-y2-xyD"/>
+                            <constraint firstItem="7iK-CN-b9j" firstAttribute="bottom" secondItem="gA8-uE-2AA" secondAttribute="bottom" id="2sh-64-Rl5"/>
+                            <constraint firstItem="7iK-CN-b9j" firstAttribute="baseline" secondItem="DDr-ie-u7d" secondAttribute="baseline" id="JdH-UN-hvh"/>
+                            <constraint firstItem="7iK-CN-b9j" firstAttribute="baseline" secondItem="1Dh-eT-tIa" secondAttribute="baseline" id="N1H-vY-gSR"/>
+                            <constraint firstAttribute="trailing" secondItem="7iK-CN-b9j" secondAttribute="trailing" constant="154" id="NEc-6c-94W"/>
+                            <constraint firstItem="7iK-CN-b9j" firstAttribute="leading" secondItem="1Dh-eT-tIa" secondAttribute="trailing" constant="34" id="NOu-Pl-y9w"/>
                             <constraint firstItem="vG0-vy-fI8" firstAttribute="top" secondItem="1X0-cF-hgK" secondAttribute="top" constant="15" id="OmL-KL-EYo"/>
                             <constraint firstItem="5eQ-OM-wiv" firstAttribute="leading" secondItem="1X0-cF-hgK" secondAttribute="leading" constant="30" id="Ono-3x-ou8"/>
-                            <constraint firstItem="FTj-xz-eTt" firstAttribute="leading" secondItem="upq-HJ-cRS" secondAttribute="trailing" constant="25" id="PtR-k7-hfL"/>
-                            <constraint firstItem="upq-HJ-cRS" firstAttribute="width" secondItem="P8X-Fc-TiM" secondAttribute="width" id="Rel-Iu-cmy"/>
+                            <constraint firstItem="7iK-CN-b9j" firstAttribute="bottom" secondItem="8hq-Z8-ujL" secondAttribute="bottom" id="XkI-px-B4z"/>
+                            <constraint firstItem="1Dh-eT-tIa" firstAttribute="leading" secondItem="8hq-Z8-ujL" secondAttribute="trailing" constant="66" id="YQv-vZ-j8O"/>
+                            <constraint firstItem="7iK-CN-b9j" firstAttribute="bottom" secondItem="ZOi-4M-Cos" secondAttribute="bottom" id="YnS-fZ-nZt"/>
+                            <constraint firstItem="7iK-CN-b9j" firstAttribute="bottom" secondItem="kIS-6M-nAI" secondAttribute="bottom" id="ajN-qv-TMH"/>
                             <constraint firstItem="P8X-Fc-TiM" firstAttribute="top" secondItem="vG0-vy-fI8" secondAttribute="bottom" constant="35" id="b1T-jg-RcA"/>
                             <constraint firstItem="5eQ-OM-wiv" firstAttribute="top" secondItem="1X0-cF-hgK" secondAttribute="top" constant="10" id="fEY-x9-E38"/>
-                            <constraint firstItem="upq-HJ-cRS" firstAttribute="leading" secondItem="fEQ-he-cCB" secondAttribute="trailing" constant="25" id="gBM-bX-cOp"/>
-                            <constraint firstItem="fEQ-he-cCB" firstAttribute="leading" secondItem="P8X-Fc-TiM" secondAttribute="trailing" constant="25" id="jbK-9g-D4p"/>
-                            <constraint firstItem="FTj-xz-eTt" firstAttribute="width" secondItem="P8X-Fc-TiM" secondAttribute="width" id="lc8-wU-DvT"/>
-                            <constraint firstItem="fEQ-he-cCB" firstAttribute="height" secondItem="P8X-Fc-TiM" secondAttribute="height" id="ndi-DV-nJu"/>
+                            <constraint firstItem="kIS-6M-nAI" firstAttribute="centerX" secondItem="DDr-ie-u7d" secondAttribute="centerX" id="gDY-x0-Occ"/>
+                            <constraint firstItem="kIS-6M-nAI" firstAttribute="leading" secondItem="7iK-CN-b9j" secondAttribute="trailing" constant="64" id="gzM-Sy-k1a"/>
+                            <constraint firstItem="7iK-CN-b9j" firstAttribute="baseline" secondItem="P8X-Fc-TiM" secondAttribute="baseline" id="k2P-Yn-6rf"/>
                             <constraint firstItem="vG0-vy-fI8" firstAttribute="centerX" secondItem="1X0-cF-hgK" secondAttribute="centerX" id="noI-CV-Sjz"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="kIS-6M-nAI" secondAttribute="trailing" constant="23" id="pF3-Wv-i82"/>
                             <constraint firstItem="P8X-Fc-TiM" firstAttribute="leading" secondItem="1X0-cF-hgK" secondAttribute="leading" constant="30" id="qZq-lU-G96"/>
-                            <constraint firstItem="upq-HJ-cRS" firstAttribute="centerY" secondItem="fEQ-he-cCB" secondAttribute="centerY" id="rGU-1u-Mc2"/>
-                            <constraint firstItem="fEQ-he-cCB" firstAttribute="width" secondItem="P8X-Fc-TiM" secondAttribute="width" id="t1t-l5-I3T"/>
-                            <constraint firstItem="upq-HJ-cRS" firstAttribute="height" secondItem="P8X-Fc-TiM" secondAttribute="height" id="xcP-iq-LWd"/>
+                            <constraint firstItem="8hq-Z8-ujL" firstAttribute="leading" secondItem="1X0-cF-hgK" secondAttribute="leadingMargin" constant="41" id="t5D-PZ-Wpw"/>
+                            <constraint firstItem="DDr-ie-u7d" firstAttribute="leading" secondItem="7iK-CN-b9j" secondAttribute="trailing" constant="36" id="uhu-fo-xql"/>
+                            <constraint firstItem="8hq-Z8-ujL" firstAttribute="centerX" secondItem="P8X-Fc-TiM" secondAttribute="centerX" id="ujJ-dx-dMW"/>
+                            <constraint firstItem="gA8-uE-2AA" firstAttribute="centerX" secondItem="1Dh-eT-tIa" secondAttribute="centerX" id="wXz-Vs-OM3"/>
+                            <constraint firstItem="7iK-CN-b9j" firstAttribute="centerX" secondItem="ZOi-4M-Cos" secondAttribute="centerX" id="zk2-Uk-STY"/>
                         </constraints>
                     </view>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
@@ -603,55 +650,6 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XB5-nX-dHa">
-                                <rect key="frame" x="35" y="66" width="139.5" height="80"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="80" id="Zzh-Py-KwC"/>
-                                </constraints>
-                                <state key="normal" title="Control"/>
-                                <connections>
-                                    <segue destination="HZD-s6-xh7" kind="presentation" animates="NO" id="Kbw-Rq-lFS"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dpU-ld-zaS">
-                                <rect key="frame" x="214.5" y="66" width="139" height="80"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="80" id="BxM-W2-HrO"/>
-                                </constraints>
-                                <state key="normal" title="Camera"/>
-                                <connections>
-                                    <action selector="incompleteFunc:" destination="vmY-hA-RBc" eventType="touchUpInside" id="SO1-Wt-Ex8"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gFG-UA-JM5">
-                                <rect key="frame" x="394" y="66" width="139" height="80"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="80" id="zcM-Ao-xRU"/>
-                                </constraints>
-                                <state key="normal" title="Alert"/>
-                                <connections>
-                                    <segue destination="ixY-EX-2uT" kind="presentation" animates="NO" id="GPM-cx-lnA"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yay-pA-064">
-                                <rect key="frame" x="35" y="176" width="139.5" height="80"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <state key="normal" title="User"/>
-                                <connections>
-                                    <action selector="incompleteFunc:" destination="vmY-hA-RBc" eventType="touchUpInside" id="dqZ-cf-HNc"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n5v-eh-lEX">
-                                <rect key="frame" x="214" y="176" width="140" height="80"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <state key="normal" title="Joystick"/>
-                                <connections>
-                                    <segue destination="vXx-i2-Y1g" kind="presentation" animates="NO" id="tbp-9P-FO9"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Loa-Li-L6o">
                                 <rect key="frame" x="30" y="10" width="30" height="28"/>
                                 <constraints>
@@ -663,30 +661,123 @@
                                     <action selector="dismiss:" destination="vmY-hA-RBc" eventType="touchUpInside" id="8Fd-PT-fBw"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="민감도 설정" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9hf-QP-3zO">
+                                <rect key="frame" x="55" y="126" width="101" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Uv-Xy-J4N">
+                                <rect key="frame" x="214" y="65" width="140" height="80"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="Qcl-dL-Wi9"/>
+                                </constraints>
+                                <inset key="imageEdgeInsets" minX="30" minY="0.0" maxX="30" maxY="23"/>
+                                <state key="normal" title="드론 선택" image="set_icon_camera">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="카메라 설정" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="614-ST-ZDf">
+                                <rect key="frame" x="234" y="125" width="101" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="naT-WV-WRn">
+                                <rect key="frame" x="213" y="176" width="140" height="80"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="AcS-fK-GMC"/>
+                                </constraints>
+                                <inset key="imageEdgeInsets" minX="30" minY="0.0" maxX="30" maxY="23"/>
+                                <state key="normal" title="User"/>
+                                <connections>
+                                    <action selector="incompleteFunc:" destination="vmY-hA-RBc" eventType="touchUpInside" id="dqZ-cf-HNc"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="조이스틱 모드" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EHK-Zg-9Od">
+                                <rect key="frame" x="237" y="236" width="93" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZsV-4u-R9d">
+                                <rect key="frame" x="35" y="176" width="140" height="80"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="yW1-tG-qAq"/>
+                                </constraints>
+                                <inset key="imageEdgeInsets" minX="30" minY="0.0" maxX="30" maxY="23"/>
+                                <state key="normal" title="드론 선택" image="set_icon_user">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="사용자 설정" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lnf-Dj-TPx">
+                                <rect key="frame" x="55" y="236" width="101" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WuB-mt-dFd">
+                                <rect key="frame" x="401" y="66" width="140" height="80"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="140" id="IbX-hI-euw"/>
+                                    <constraint firstAttribute="height" constant="80" id="tDB-CP-qdW"/>
+                                </constraints>
+                                <inset key="imageEdgeInsets" minX="30" minY="0.0" maxX="30" maxY="23"/>
+                                <state key="normal" title="드론 선택" image="set_icon_alert">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="알람 및 정보" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sHF-lq-gLu">
+                                <rect key="frame" x="430" y="126" width="82.5" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nAw-5p-h6p">
+                                <rect key="frame" x="35" y="66" width="140" height="80"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="MKt-R5-lRn"/>
+                                    <constraint firstAttribute="width" constant="140" id="nIw-Ce-xRc"/>
+                                </constraints>
+                                <inset key="imageEdgeInsets" minX="30" minY="0.0" maxX="30" maxY="23"/>
+                                <state key="normal" title="Camera"/>
+                                <connections>
+                                    <action selector="incompleteFunc:" destination="vmY-hA-RBc" eventType="touchUpInside" id="SO1-Wt-Ex8"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="dpU-ld-zaS" firstAttribute="leading" secondItem="XB5-nX-dHa" secondAttribute="trailing" constant="40" id="2iH-o9-QHO"/>
+                            <constraint firstItem="nAw-5p-h6p" firstAttribute="centerX" secondItem="9hf-QP-3zO" secondAttribute="centerX" id="17b-8O-cd8"/>
+                            <constraint firstItem="614-ST-ZDf" firstAttribute="centerX" secondItem="8Uv-Xy-J4N" secondAttribute="centerX" id="1Ja-cQ-CMB"/>
                             <constraint firstItem="Loa-Li-L6o" firstAttribute="top" secondItem="Rwt-M6-UON" secondAttribute="top" constant="10" id="3k3-0Z-ccX"/>
-                            <constraint firstItem="dpU-ld-zaS" firstAttribute="top" secondItem="GIF-p1-GVO" secondAttribute="bottom" constant="30" id="51m-lo-qUU"/>
-                            <constraint firstItem="n5v-eh-lEX" firstAttribute="width" secondItem="yay-pA-064" secondAttribute="width" id="5Sk-xE-x6E"/>
-                            <constraint firstItem="gFG-UA-JM5" firstAttribute="baseline" secondItem="dpU-ld-zaS" secondAttribute="baseline" id="71c-55-e6x"/>
-                            <constraint firstItem="gFG-UA-JM5" firstAttribute="leading" secondItem="dpU-ld-zaS" secondAttribute="trailing" constant="40" id="8Pe-WT-nHT"/>
-                            <constraint firstItem="n5v-eh-lEX" firstAttribute="height" secondItem="yay-pA-064" secondAttribute="height" id="9kD-9Y-Kyi"/>
-                            <constraint firstItem="dpU-ld-zaS" firstAttribute="centerX" secondItem="Rwt-M6-UON" secondAttribute="centerX" id="BX1-Za-XhY"/>
-                            <constraint firstItem="XB5-nX-dHa" firstAttribute="baseline" secondItem="dpU-ld-zaS" secondAttribute="baseline" id="Dt2-SC-pLu"/>
-                            <constraint firstItem="XB5-nX-dHa" firstAttribute="height" secondItem="yay-pA-064" secondAttribute="height" id="GY1-9A-tO0"/>
-                            <constraint firstItem="n5v-eh-lEX" firstAttribute="top" secondItem="dpU-ld-zaS" secondAttribute="bottom" constant="30" id="Gvb-6x-k9d"/>
-                            <constraint firstItem="yay-pA-064" firstAttribute="top" secondItem="XB5-nX-dHa" secondAttribute="bottom" constant="30" id="LPM-df-dOA"/>
-                            <constraint firstItem="XB5-nX-dHa" firstAttribute="width" secondItem="yay-pA-064" secondAttribute="width" id="Seg-6J-bnb"/>
+                            <constraint firstItem="ZsV-4u-R9d" firstAttribute="top" secondItem="9hf-QP-3zO" secondAttribute="bottom" constant="29" id="7tB-PY-mjT"/>
+                            <constraint firstItem="8Uv-Xy-J4N" firstAttribute="top" secondItem="GIF-p1-GVO" secondAttribute="bottom" constant="29" id="8DL-fd-62M"/>
+                            <constraint firstItem="8Uv-Xy-J4N" firstAttribute="leading" secondItem="9hf-QP-3zO" secondAttribute="trailing" constant="58" id="8vN-oZ-DyR"/>
+                            <constraint firstItem="nAw-5p-h6p" firstAttribute="trailing" secondItem="ZsV-4u-R9d" secondAttribute="trailing" id="C7N-d8-SqI"/>
+                            <constraint firstItem="naT-WV-WRn" firstAttribute="leading" secondItem="ZsV-4u-R9d" secondAttribute="trailing" constant="38" id="ELa-47-H63"/>
+                            <constraint firstItem="Lnf-Dj-TPx" firstAttribute="baseline" secondItem="EHK-Zg-9Od" secondAttribute="baseline" id="FlK-07-nOR"/>
+                            <constraint firstItem="nAw-5p-h6p" firstAttribute="centerX" secondItem="Lnf-Dj-TPx" secondAttribute="centerX" id="GAC-xW-i74"/>
+                            <constraint firstItem="nAw-5p-h6p" firstAttribute="top" secondItem="Loa-Li-L6o" secondAttribute="bottom" constant="28" id="ICH-fU-R2F"/>
+                            <constraint firstItem="d4i-8E-iBA" firstAttribute="top" secondItem="Lnf-Dj-TPx" secondAttribute="bottom" constant="63" id="InK-cH-gXR"/>
+                            <constraint firstItem="nAw-5p-h6p" firstAttribute="leading" secondItem="ZsV-4u-R9d" secondAttribute="leading" id="MOh-vI-nAp"/>
+                            <constraint firstItem="9hf-QP-3zO" firstAttribute="leading" secondItem="Lnf-Dj-TPx" secondAttribute="leading" id="Uxo-5C-R5k"/>
+                            <constraint firstItem="nAw-5p-h6p" firstAttribute="leading" secondItem="Rwt-M6-UON" secondAttribute="leadingMargin" constant="15" id="WhH-Wi-VUB"/>
                             <constraint firstItem="Loa-Li-L6o" firstAttribute="leading" secondItem="Rwt-M6-UON" secondAttribute="leading" constant="30" id="XOj-uY-LzR"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="WuB-mt-dFd" secondAttribute="trailing" constant="7" id="YLR-Kw-H2t"/>
+                            <constraint firstItem="WuB-mt-dFd" firstAttribute="centerX" secondItem="sHF-lq-gLu" secondAttribute="centerX" id="ZFp-4y-ngq"/>
                             <constraint firstItem="GIF-p1-GVO" firstAttribute="centerX" secondItem="Rwt-M6-UON" secondAttribute="centerX" id="alT-dG-N9m"/>
-                            <constraint firstAttribute="trailing" secondItem="gFG-UA-JM5" secondAttribute="trailing" constant="35" id="gGf-bZ-vXh"/>
-                            <constraint firstItem="n5v-eh-lEX" firstAttribute="centerX" secondItem="Rwt-M6-UON" secondAttribute="centerX" id="gHW-rk-LNh"/>
-                            <constraint firstItem="XB5-nX-dHa" firstAttribute="leading" secondItem="Rwt-M6-UON" secondAttribute="leading" constant="35" id="h1L-VP-R05"/>
-                            <constraint firstItem="dpU-ld-zaS" firstAttribute="width" secondItem="gFG-UA-JM5" secondAttribute="width" id="o1d-4r-de5"/>
-                            <constraint firstItem="yay-pA-064" firstAttribute="centerX" secondItem="XB5-nX-dHa" secondAttribute="centerX" id="qGH-DS-BZo"/>
+                            <constraint firstItem="WuB-mt-dFd" firstAttribute="leading" secondItem="8Uv-Xy-J4N" secondAttribute="trailing" constant="47" id="h1k-Er-crA"/>
+                            <constraint firstItem="ZsV-4u-R9d" firstAttribute="top" secondItem="nAw-5p-h6p" secondAttribute="bottom" constant="30" id="hJC-zb-U4F"/>
+                            <constraint firstItem="nAw-5p-h6p" firstAttribute="bottom" secondItem="614-ST-ZDf" secondAttribute="bottom" id="hK3-vG-oIO"/>
+                            <constraint firstItem="nAw-5p-h6p" firstAttribute="top" secondItem="WuB-mt-dFd" secondAttribute="top" id="hdt-ca-KFW"/>
+                            <constraint firstItem="naT-WV-WRn" firstAttribute="centerX" secondItem="GIF-p1-GVO" secondAttribute="centerX" id="j1Z-3n-TVR"/>
+                            <constraint firstItem="8Uv-Xy-J4N" firstAttribute="leading" secondItem="nAw-5p-h6p" secondAttribute="trailing" constant="39" id="lBz-8q-adZ"/>
+                            <constraint firstItem="naT-WV-WRn" firstAttribute="centerX" secondItem="EHK-Zg-9Od" secondAttribute="centerX" id="ozC-CC-lLW"/>
                             <constraint firstItem="GIF-p1-GVO" firstAttribute="top" secondItem="Rwt-M6-UON" secondAttribute="top" constant="15" id="qs0-Du-lMC"/>
+                            <constraint firstItem="9hf-QP-3zO" firstAttribute="baseline" secondItem="sHF-lq-gLu" secondAttribute="baseline" id="t8u-zw-W3y"/>
+                            <constraint firstItem="614-ST-ZDf" firstAttribute="leading" secondItem="nAw-5p-h6p" secondAttribute="trailing" constant="59" id="u5C-ww-VDC"/>
+                            <constraint firstItem="naT-WV-WRn" firstAttribute="top" secondItem="ZsV-4u-R9d" secondAttribute="top" id="yvr-Vc-EQg"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="tPP-yW-CsJ"/>
@@ -716,13 +807,13 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="저전압 경고" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9F8-cx-lWg">
-                                <rect key="frame" x="80" y="86" width="73.5" height="19.5"/>
+                                <rect key="frame" x="80" y="86" width="74" height="20"/>
                                 <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="16"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="기체이상 경고" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9zg-y3-QHe">
-                                <rect key="frame" x="80" y="145.5" width="88" height="20"/>
+                                <rect key="frame" x="80" y="146" width="88" height="20"/>
                                 <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="16"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -750,13 +841,13 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="추락 경고" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jFq-ML-Rl0">
-                                <rect key="frame" x="80" y="205.5" width="60" height="20"/>
+                                <rect key="frame" x="80" y="206" width="60" height="20"/>
                                 <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="16"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="비행금지구역 경고" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="owB-Gu-e5q">
-                                <rect key="frame" x="80" y="265.5" width="115" height="20"/>
+                                <rect key="frame" x="80" y="266" width="115" height="20"/>
                                 <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="16"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -840,7 +931,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="조이스틱 모드" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qfl-f1-IdI">
-                                <rect key="frame" x="65" y="86" width="87.5" height="19.5"/>
+                                <rect key="frame" x="65" y="86" width="88" height="20"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -880,7 +971,7 @@
                                 </userDefinedRuntimeAttributes>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="조이스틱 모드 3" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ia3-Dj-xyM">
-                                <rect key="frame" x="236" y="149" width="95.5" height="18"/>
+                                <rect key="frame" x="236" y="149" width="96" height="18"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -1101,45 +1192,18 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fTg-NT-RnF">
-                                <rect key="frame" x="35" y="66" width="139.5" height="80"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fTg-NT-RnF">
+                                <rect key="frame" x="35" y="65" width="140" height="80"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="80" id="TGt-wP-hhq"/>
                                 </constraints>
-                                <state key="normal" title="드론 선택"/>
+                                <inset key="imageEdgeInsets" minX="30" minY="0.0" maxX="30" maxY="23"/>
+                                <state key="normal" title="드론 선택" image="connect_icon_dron">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
                                 <connections>
                                     <segue destination="TVG-UT-wnq" kind="presentation" animates="NO" id="0U4-Ok-3Gl"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iwm-kv-3tI">
-                                <rect key="frame" x="214.5" y="66" width="139" height="80"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="80" id="21Q-2u-BYg"/>
-                                </constraints>
-                                <state key="normal" title="블루투스"/>
-                                <connections>
-                                    <segue destination="b9O-2O-evU" kind="presentation" animates="NO" id="G5O-E3-AfX"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lx7-EW-4iC">
-                                <rect key="frame" x="394" y="66" width="139" height="80"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="80" id="hbi-Us-mqm"/>
-                                </constraints>
-                                <state key="normal" title="와이파이"/>
-                                <connections>
-                                    <action selector="incompleteFuc:" destination="ih2-La-M0X" eventType="touchUpInside" id="1SU-Mn-Lwa"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7xC-YN-ZGh">
-                                <rect key="frame" x="35" y="176" width="139.5" height="80"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <state key="normal" title="트리밍"/>
-                                <connections>
-                                    <segue destination="mro-69-7T4" kind="presentation" animates="NO" id="AZF-yw-Pw2"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="byP-II-uht">
@@ -1153,26 +1217,91 @@
                                     <action selector="dismiss:" destination="ih2-La-M0X" eventType="touchUpInside" id="0tc-iG-a9I"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Drone Select" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lCQ-D5-iWx">
+                                <rect key="frame" x="55" y="125" width="101" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9vc-XM-eNk">
+                                <rect key="frame" x="214" y="66" width="140" height="80"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="FDZ-to-eKx"/>
+                                </constraints>
+                                <inset key="imageEdgeInsets" minX="30" minY="0.0" maxX="30" maxY="23"/>
+                                <state key="normal" title="와이파이"/>
+                                <connections>
+                                    <action selector="incompleteFuc:" destination="ih2-La-M0X" eventType="touchUpInside" id="1SU-Mn-Lwa"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bluetooth" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FPe-WE-1Yz">
+                                <rect key="frame" x="234" y="126" width="101" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SdV-o8-7AB">
+                                <rect key="frame" x="391" y="66" width="140" height="80"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="byT-Wo-fX2"/>
+                                </constraints>
+                                <inset key="imageEdgeInsets" minX="30" minY="0.0" maxX="30" maxY="23"/>
+                                <state key="normal" title="드론 선택" image="connect_icon_wifi">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Wifi" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="K7b-yB-g6D">
+                                <rect key="frame" x="411" y="126" width="101" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ct3-G9-QFf">
+                                <rect key="frame" x="35" y="186" width="140" height="80"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="140" id="0U8-qV-EeS"/>
+                                    <constraint firstAttribute="height" constant="80" id="mAc-wv-Btk"/>
+                                </constraints>
+                                <inset key="imageEdgeInsets" minX="30" minY="0.0" maxX="30" maxY="23"/>
+                                <state key="normal" title="드론 선택" image="connect_icon_trimming">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Trimming" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XbA-Ul-ZCv">
+                                <rect key="frame" x="55" y="246" width="101" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="lx7-EW-4iC" firstAttribute="leading" secondItem="iwm-kv-3tI" secondAttribute="trailing" constant="40" id="2eI-UI-JPx"/>
-                            <constraint firstItem="fTg-NT-RnF" firstAttribute="baseline" secondItem="iwm-kv-3tI" secondAttribute="baseline" id="7TH-8v-z5e"/>
-                            <constraint firstItem="7xC-YN-ZGh" firstAttribute="top" secondItem="fTg-NT-RnF" secondAttribute="bottom" constant="30" id="9wx-M5-dIh"/>
+                            <constraint firstItem="9vc-XM-eNk" firstAttribute="centerX" secondItem="FPe-WE-1Yz" secondAttribute="centerX" id="1nl-7D-e5Q"/>
+                            <constraint firstItem="fTg-NT-RnF" firstAttribute="top" secondItem="byP-II-uht" secondAttribute="bottom" constant="27" id="5U6-tr-BwD"/>
                             <constraint firstItem="fTg-NT-RnF" firstAttribute="leading" secondItem="uRV-EG-oV4" secondAttribute="leading" constant="35" id="BVN-xz-kYZ"/>
-                            <constraint firstItem="iwm-kv-3tI" firstAttribute="top" secondItem="sas-xj-FVt" secondAttribute="bottom" constant="30" id="BxE-Ea-YPz"/>
-                            <constraint firstItem="fTg-NT-RnF" firstAttribute="width" secondItem="7xC-YN-ZGh" secondAttribute="width" id="Ndz-kv-cfO"/>
-                            <constraint firstItem="7xC-YN-ZGh" firstAttribute="centerX" secondItem="fTg-NT-RnF" secondAttribute="centerX" id="RNA-Lf-3aY"/>
+                            <constraint firstItem="Ct3-G9-QFf" firstAttribute="centerX" secondItem="lCQ-D5-iWx" secondAttribute="centerX" id="DOX-HF-7s8"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="K7b-yB-g6D" secondAttribute="trailing" constant="36" id="F0t-Na-aI4"/>
+                            <constraint firstItem="9vc-XM-eNk" firstAttribute="leading" secondItem="fTg-NT-RnF" secondAttribute="trailing" constant="39" id="Hzk-k2-AuD"/>
+                            <constraint firstItem="9vc-XM-eNk" firstAttribute="bottom" secondItem="lCQ-D5-iWx" secondAttribute="bottom" id="KTI-Xs-HL8"/>
+                            <constraint firstItem="SdV-o8-7AB" firstAttribute="leading" secondItem="FPe-WE-1Yz" secondAttribute="trailing" constant="56" id="L3U-0J-eXE"/>
+                            <constraint firstItem="K7b-yB-g6D" firstAttribute="leading" secondItem="9vc-XM-eNk" secondAttribute="trailing" constant="57" id="PNH-3d-q62"/>
+                            <constraint firstItem="Ct3-G9-QFf" firstAttribute="top" secondItem="lCQ-D5-iWx" secondAttribute="bottom" constant="40" id="R3g-5x-uC4"/>
                             <constraint firstItem="sas-xj-FVt" firstAttribute="top" secondItem="uRV-EG-oV4" secondAttribute="top" constant="15" id="Rub-nO-Muf"/>
-                            <constraint firstAttribute="trailing" secondItem="lx7-EW-4iC" secondAttribute="trailing" constant="35" id="Zv3-BR-XWc"/>
-                            <constraint firstItem="fTg-NT-RnF" firstAttribute="height" secondItem="7xC-YN-ZGh" secondAttribute="height" id="adp-kg-19c"/>
+                            <constraint firstItem="Ct3-G9-QFf" firstAttribute="trailing" secondItem="fTg-NT-RnF" secondAttribute="trailing" id="TWz-lY-FIV"/>
+                            <constraint firstItem="Ct3-G9-QFf" firstAttribute="centerX" secondItem="XbA-Ul-ZCv" secondAttribute="centerX" id="WWB-gN-Mil"/>
+                            <constraint firstItem="eMu-6G-8y6" firstAttribute="top" secondItem="XbA-Ul-ZCv" secondAttribute="bottom" constant="53" id="Yjs-wV-a5q"/>
+                            <constraint firstItem="SdV-o8-7AB" firstAttribute="leading" secondItem="9vc-XM-eNk" secondAttribute="trailing" constant="37" id="Zs3-Nb-boT"/>
+                            <constraint firstItem="9vc-XM-eNk" firstAttribute="centerX" secondItem="sas-xj-FVt" secondAttribute="centerX" id="aly-Ay-Pbw"/>
                             <constraint firstItem="byP-II-uht" firstAttribute="top" secondItem="uRV-EG-oV4" secondAttribute="top" constant="10" id="bOu-pp-0Ah"/>
+                            <constraint firstItem="FPe-WE-1Yz" firstAttribute="baseline" secondItem="K7b-yB-g6D" secondAttribute="baseline" id="eT2-2s-Gyh"/>
                             <constraint firstItem="byP-II-uht" firstAttribute="leading" secondItem="uRV-EG-oV4" secondAttribute="leading" constant="30" id="eeF-7f-eXj"/>
-                            <constraint firstItem="lx7-EW-4iC" firstAttribute="baseline" secondItem="iwm-kv-3tI" secondAttribute="baseline" id="hkE-Gn-fu4"/>
+                            <constraint firstItem="Ct3-G9-QFf" firstAttribute="leading" secondItem="fTg-NT-RnF" secondAttribute="leading" id="kaD-a5-Cww"/>
+                            <constraint firstItem="FPe-WE-1Yz" firstAttribute="top" secondItem="sas-xj-FVt" secondAttribute="bottom" constant="90" id="lEI-ts-Y5v"/>
+                            <constraint firstItem="XbA-Ul-ZCv" firstAttribute="leading" secondItem="uRV-EG-oV4" secondAttribute="leadingMargin" constant="35" id="lSj-BN-Qg0"/>
                             <constraint firstItem="sas-xj-FVt" firstAttribute="centerX" secondItem="uRV-EG-oV4" secondAttribute="centerX" id="lee-TO-TTg"/>
-                            <constraint firstItem="iwm-kv-3tI" firstAttribute="centerX" secondItem="uRV-EG-oV4" secondAttribute="centerX" id="oEH-WY-TuG"/>
-                            <constraint firstItem="iwm-kv-3tI" firstAttribute="leading" secondItem="fTg-NT-RnF" secondAttribute="trailing" constant="40" id="pg7-0j-9eR"/>
-                            <constraint firstItem="iwm-kv-3tI" firstAttribute="width" secondItem="lx7-EW-4iC" secondAttribute="width" id="sGv-vR-MaG"/>
+                            <constraint firstItem="XbA-Ul-ZCv" firstAttribute="leading" secondItem="lCQ-D5-iWx" secondAttribute="leading" id="p2Y-vx-nqS"/>
+                            <constraint firstItem="9vc-XM-eNk" firstAttribute="top" secondItem="SdV-o8-7AB" secondAttribute="top" id="pKl-yL-ZSe"/>
+                            <constraint firstItem="K7b-yB-g6D" firstAttribute="centerX" secondItem="SdV-o8-7AB" secondAttribute="centerX" id="w3G-k2-901"/>
+                            <constraint firstItem="eMu-6G-8y6" firstAttribute="top" secondItem="Ct3-G9-QFf" secondAttribute="bottom" constant="54" id="wya-sh-Gtg"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="nW0-Zu-EXc"/>
@@ -1185,11 +1314,17 @@
         </scene>
     </scenes>
     <resources>
+        <image name="connect_icon_dron" width="512" height="512"/>
+        <image name="connect_icon_trimming" width="1000" height="1000"/>
+        <image name="connect_icon_wifi" width="512" height="512"/>
         <image name="main_icon_connect" width="106" height="113"/>
         <image name="main_icon_gps" width="248" height="248"/>
         <image name="main_icon_setting" width="106" height="113"/>
         <image name="main_icon_speed" width="29" height="29"/>
         <image name="menu_icon_back" width="71" height="71"/>
         <image name="menu_icon_save" width="256" height="256"/>
+        <image name="set_icon_alert" width="256" height="256"/>
+        <image name="set_icon_camera" width="260" height="204"/>
+        <image name="set_icon_user" width="512" height="512"/>
     </resources>
 </document>
