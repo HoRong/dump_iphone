@@ -80,6 +80,8 @@ class Conn_BLTH: UIViewController,UITableViewDataSource, UITableViewDelegate, Bl
         print("test " + "select device")
         // the user has selected a peripheral, so stop scanning and proceed to the next view
         serial.stopScan()
+        btn_bluetooth.enabled = true;
+        btn_bluetooth.backgroundColor = UIColor.whiteColor()
         selectedPeripheral = peripherals[indexPath.row].peripheral
         serial.connectToPeripheral(selectedPeripheral!)
         
