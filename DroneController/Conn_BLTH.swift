@@ -2,15 +2,14 @@ import UIKit
 import CoreBluetooth
 
 class Conn_BLTH: UIViewController,UITableViewDataSource, UITableViewDelegate, BluetoothSerialDelegate {
-    
+
     @IBOutlet weak var btn_bluetooth: UIButton!
     @IBOutlet weak var tableView: UITableView!
     var peripherals: [(peripheral: CBPeripheral, RSSI: Float)] = []
     
     var selectedPeripheral: CBPeripheral?
     let textCellIdentifier = "cell"
-    
-    @IBOutlet weak var testLabel: UILabel!
+    var timer = NSTimer()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -19,35 +18,60 @@ class Conn_BLTH: UIViewController,UITableViewDataSource, UITableViewDelegate, Bl
         
         serial = BluetoothSerial(delegate: self)
         serial.writeType = .WithoutResponse
-        // Do any additional setup after loading the view, typically from a nib.
-    }
+        
+        UIView.hr_setToastThemeColor(color: UIColor.blackColor())
 
+    }
     
     @IBAction func dismiss(sender: AnyObject) {
         self.presentingViewController?.dismissViewControllerAnimated(false, completion: nil)
     }
     
-    
-    func serialDidReceiveString(message: String) {}
-    
-    func serialDidDisconnect(peripheral: CBPeripheral, error: NSError?) {
+    /// Should be called 10s after we've begun scanning
+    func scanTimeOut() {
+        // timeout has occurred, stop scanning and give the user the option to try again
         
+        view.makeToast(message: "Done Scanning", duration: 2, position: "center")
+        serial.stopScan()
+        
+        btn_bluetooth.enabled = true
+        btn_bluetooth.backgroundColor = UIColor.whiteColor()
+    }
+    
+    /// Should be called 10s after we've begun connecting
+    func connectTimeOut() {
+        
+        // don't if we've already connected
+        if let _ = serial.connectedPeripheral {
+            return
+        }
+        
+        view.makeToast(message: "Connection Fail - Time out", duration: 2, position: "center")
+    }
+    
+
+    func serialDidDisconnect(peripheral: CBPeripheral, error: NSError?) {
+        view.makeToast(message: "Connection Fail - Disconnect")
     }
     
     func serialIsReady(peripheral: CBPeripheral) {
-       print("test " + "connect device 11")
+        view.makeToast(message: "Connection Succeed", duration: 2, position: "center")
         
-         serial.sendMessageToDevice("send init data")
-      
+        peripherals.removeAll()
+        tableView.reloadData()
+    
+        serial.sendMessageToDevice("send init data")
     }
     
     func serialDidChangeState(newState: CBCentralManagerState) {
-        print("test " + "connect device 22")
+        /* 기기 블루투스 상태 변화할 때 호출되는 메소드*/
     }
 
     
     @IBAction func scanBluetooth(sender: AnyObject) {
         serial.startScan()
+        
+        timer = NSTimer.scheduledTimerWithTimeInterval(10, target: self, selector: #selector(Conn_BLTH.scanTimeOut), userInfo: nil, repeats: false)
         
         btn_bluetooth.enabled = false;
         btn_bluetooth.backgroundColor = UIColor.grayColor()
@@ -77,7 +101,6 @@ class Conn_BLTH: UIViewController,UITableViewDataSource, UITableViewDelegate, Bl
         
         tableView.deselectRowAtIndexPath(indexPath, animated: true)
         
-        print("test " + "select device")
         // the user has selected a peripheral, so stop scanning and proceed to the next view
         serial.stopScan()
         btn_bluetooth.enabled = true;
@@ -85,6 +108,7 @@ class Conn_BLTH: UIViewController,UITableViewDataSource, UITableViewDelegate, Bl
         selectedPeripheral = peripherals[indexPath.row].peripheral
         serial.connectToPeripheral(selectedPeripheral!)
         
+        NSTimer.scheduledTimerWithTimeInterval(10, target: self, selector: #selector(Conn_BLTH.connectTimeOut), userInfo: nil, repeats: false)
        
     }
     
@@ -100,7 +124,6 @@ class Conn_BLTH: UIViewController,UITableViewDataSource, UITableViewDelegate, Bl
         peripherals.sortInPlace { $0.RSSI < $1.RSSI }
         
         tableView.reloadData()
-        testLabel.text = peripherals[0].peripheral.name;
     }
 
 }
