@@ -17,9 +17,12 @@ class ViewController: UIViewController, BluetoothSerialDelegate {
     var bTimer = NSTimer() /* For send Message To BLE Device */
     
     var scene: GameScene!
+    var droneState: DroneState!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        droneState = DroneState()
         
         // init serial
         serial = BluetoothSerial(delegate: self)

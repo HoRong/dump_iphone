@@ -692,6 +692,7 @@
                                 <state key="normal" title="User"/>
                                 <connections>
                                     <action selector="incompleteFunc:" destination="vmY-hA-RBc" eventType="touchUpInside" id="dqZ-cf-HNc"/>
+                                    <segue destination="vXx-i2-Y1g" kind="presentation" id="NAk-yy-FRc"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="조이스틱 모드" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EHK-Zg-9Od">
@@ -726,6 +727,9 @@
                                 <state key="normal" title="드론 선택" image="set_icon_alert">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <segue destination="ixY-EX-2uT" kind="presentation" id="nhe-Ix-mxv"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="알람 및 정보" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sHF-lq-gLu">
                                 <rect key="frame" x="430" y="126" width="82.5" height="21"/>
@@ -743,6 +747,7 @@
                                 <state key="normal" title="Camera"/>
                                 <connections>
                                     <action selector="incompleteFunc:" destination="vmY-hA-RBc" eventType="touchUpInside" id="SO1-Wt-Ex8"/>
+                                    <segue destination="HZD-s6-xh7" kind="presentation" id="dTO-os-e1y"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -1033,7 +1038,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DFC-Q3-vHA" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="935" y="1301"/>
+            <point key="canvasLocation" x="490" y="1341"/>
         </scene>
         <!--Set SensiVC-->
         <scene sceneID="cFi-gH-72k">
@@ -1232,6 +1237,7 @@
                                 <state key="normal" title="와이파이"/>
                                 <connections>
                                     <action selector="incompleteFuc:" destination="ih2-La-M0X" eventType="touchUpInside" id="1SU-Mn-Lwa"/>
+                                    <segue destination="b9O-2O-evU" kind="presentation" id="gc7-t6-rZ7"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bluetooth" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FPe-WE-1Yz">
@@ -1266,6 +1272,9 @@
                                 <state key="normal" title="드론 선택" image="connect_icon_trimming">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <segue destination="mro-69-7T4" kind="presentation" id="iMF-8B-Fd6"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Trimming" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XbA-Ul-ZCv">
                                 <rect key="frame" x="55" y="246" width="101" height="21"/>
