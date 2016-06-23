@@ -30,7 +30,6 @@ class Conn_BLTH: UIViewController,UITableViewDataSource, UITableViewDelegate, Bl
         serial.stopScan()
         
         btn_bluetooth.enabled = true
-        btn_bluetooth.backgroundColor = UIColor.whiteColor()
     }
     
     /// Should be called 10s after we've begun connecting
@@ -43,7 +42,6 @@ class Conn_BLTH: UIViewController,UITableViewDataSource, UITableViewDelegate, Bl
         
         view.makeToast(message: "Connection Fail - Time out", duration: 2, position: "center")
     }
-    
 
     func serialDidDisconnect(peripheral: CBPeripheral, error: NSError?) {
         view.makeToast(message: "Connection Fail - Disconnect")
@@ -69,7 +67,6 @@ class Conn_BLTH: UIViewController,UITableViewDataSource, UITableViewDelegate, Bl
         timer = NSTimer.scheduledTimerWithTimeInterval(10, target: self, selector: #selector(Conn_BLTH.scanTimeOut), userInfo: nil, repeats: false)
         
         btn_bluetooth.enabled = false;
-        btn_bluetooth.backgroundColor = UIColor.grayColor()
     }
     
     func numberOfSectionsInTableView(tableView: UITableView) -> Int {
@@ -99,7 +96,6 @@ class Conn_BLTH: UIViewController,UITableViewDataSource, UITableViewDelegate, Bl
         // the user has selected a peripheral, so stop scanning and proceed to the next view
         serial.stopScan()
         btn_bluetooth.enabled = true;
-        btn_bluetooth.backgroundColor = UIColor.whiteColor()
         selectedPeripheral = peripherals[indexPath.row].peripheral
         serial.connectToPeripheral(selectedPeripheral!)
         

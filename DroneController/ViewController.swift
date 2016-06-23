@@ -17,12 +17,9 @@ class ViewController: UIViewController, BluetoothSerialDelegate {
     var bTimer = NSTimer() /* For send Message To BLE Device */
     
     var scene: GameScene!
-    var droneState: DroneState!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        droneState = DroneState()
         
         // init serial
         serial = BluetoothSerial(delegate: self)
@@ -87,6 +84,5 @@ class ViewController: UIViewController, BluetoothSerialDelegate {
     func serialDidChangeState(newState: CBCentralManagerState) {
         /* 기기 블루투스 상태 변화할 때 호출되는 메소드*/
     }
-    
 }
 

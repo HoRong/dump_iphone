@@ -6,6 +6,8 @@ import UIKit
 
 
 class MenuSettingVC: UIViewController {
+    @IBAction func incompleteFunc(sender: AnyObject) {
+    }
 
     @IBAction func dismiss(sender: AnyObject) {
         

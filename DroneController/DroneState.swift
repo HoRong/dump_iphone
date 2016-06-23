@@ -3,6 +3,8 @@ import Foundation
 
 class DroneState {
     
+    static let sharedInstance = DroneState();
+    
     let stateName: [String] = ["JoystickMode", "ControlSensitivity",
     "aVolt", "aMarf", "aCrash", "aArea", "aLimit"];
     let defaults: NSUserDefaults
@@ -11,7 +13,6 @@ class DroneState {
     var controlSensitivity: Int
     var alertLimit: Int
     var alertMode: [Bool] = [true, true, true, true]
-
     
     init(){
         defaults = NSUserDefaults.standardUserDefaults()
