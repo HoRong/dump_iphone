@@ -45,8 +45,12 @@ class DroneState {
         return self.controlSensitivity
     }
     
-    func  getAlertState() -> ([Bool], Int) {
-        return (alertMode, alertLimit)
+    func  getAlertState() -> [Bool] {
+        return alertMode
+    }
+    
+    func getLimit() -> Int {
+        return alertLimit
     }
     
     func setJoystickMode(_value: Int){
