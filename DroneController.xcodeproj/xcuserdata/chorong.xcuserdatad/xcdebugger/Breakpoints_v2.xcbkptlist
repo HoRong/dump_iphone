@@ -2,4 +2,162 @@
 <Bucket
    type = "1"
    version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "DroneController/Set_JoystickVC.swift"
+            timestampString = "488461409.672994"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "13"
+            endingLineNumber = "13"
+            landmarkName = "Set_JoystickVC"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "DroneController.Set_JoystickVC.view_mode3.getter : weak Swift.ImplicitlyUnwrappedOptional&lt;__ObjC.UIView&gt;"
+                  moduleName = "DroneController"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/chorong/Desktop/DroneController/DroneController/Set_JoystickVC.swift"
+                  timestampString = "488461200.582172"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "14"
+                  endingLineNumber = "14"
+                  offsetFromSymbolStart = "40">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "DroneController.Set_JoystickVC.view_mode3.setter : weak Swift.ImplicitlyUnwrappedOptional&lt;__ObjC.UIView&gt;"
+                  moduleName = "DroneController"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/chorong/Desktop/DroneController/DroneController/Set_JoystickVC.swift"
+                  timestampString = "488461200.584472"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "14"
+                  endingLineNumber = "14"
+                  offsetFromSymbolStart = "52">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "DroneController.Set_JoystickVC.init (nibName : Swift.Optional&lt;Swift.String&gt;, bundle : Swift.Optional&lt;__ObjC.NSBundle&gt;) -&gt; DroneController.Set_JoystickVC"
+                  moduleName = "DroneController"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/chorong/Desktop/DroneController/DroneController/Set_JoystickVC.swift"
+                  timestampString = "488461200.584651"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "14"
+                  endingLineNumber = "14"
+                  offsetFromSymbolStart = "708">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "DroneController.Set_JoystickVC.init (coder : __ObjC.NSCoder) -&gt; Swift.Optional&lt;DroneController.Set_JoystickVC&gt;"
+                  moduleName = "DroneController"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/chorong/Desktop/DroneController/DroneController/Set_JoystickVC.swift"
+                  timestampString = "488461200.584748"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "14"
+                  endingLineNumber = "14"
+                  offsetFromSymbolStart = "652">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "DroneController/Set_JoystickVC.swift"
+            timestampString = "488461409.672994"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "12"
+            endingLineNumber = "12"
+            landmarkName = "Set_JoystickVC"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "DroneController.Set_JoystickVC.view_mode2.getter : weak Swift.ImplicitlyUnwrappedOptional&lt;__ObjC.UIView&gt;"
+                  moduleName = "DroneController"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/chorong/Desktop/DroneController/DroneController/Set_JoystickVC.swift"
+                  timestampString = "488461201.142391"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "13"
+                  endingLineNumber = "13"
+                  offsetFromSymbolStart = "40">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "DroneController.Set_JoystickVC.view_mode2.setter : weak Swift.ImplicitlyUnwrappedOptional&lt;__ObjC.UIView&gt;"
+                  moduleName = "DroneController"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/chorong/Desktop/DroneController/DroneController/Set_JoystickVC.swift"
+                  timestampString = "488461201.142563"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "13"
+                  endingLineNumber = "13"
+                  offsetFromSymbolStart = "52">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "DroneController.Set_JoystickVC.init (nibName : Swift.Optional&lt;Swift.String&gt;, bundle : Swift.Optional&lt;__ObjC.NSBundle&gt;) -&gt; DroneController.Set_JoystickVC"
+                  moduleName = "DroneController"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/chorong/Desktop/DroneController/DroneController/Set_JoystickVC.swift"
+                  timestampString = "488461201.142659"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "13"
+                  endingLineNumber = "13"
+                  offsetFromSymbolStart = "656">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "DroneController.Set_JoystickVC.init (coder : __ObjC.NSCoder) -&gt; Swift.Optional&lt;DroneController.Set_JoystickVC&gt;"
+                  moduleName = "DroneController"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/chorong/Desktop/DroneController/DroneController/Set_JoystickVC.swift"
+                  timestampString = "488461201.142751"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "13"
+                  endingLineNumber = "13"
+                  offsetFromSymbolStart = "600">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
 </Bucket>

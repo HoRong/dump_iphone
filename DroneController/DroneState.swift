@@ -18,7 +18,7 @@ class DroneState {
         defaults = NSUserDefaults.standardUserDefaults()
         
         if let _: Int = defaults.integerForKey(stateName[0]){
-            joystickMode = 0
+            joystickMode = 1
             controlSensitivity = 0
             alertLimit = 10
         }
