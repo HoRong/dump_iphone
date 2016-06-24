@@ -40,7 +40,7 @@ class Conn_BLTH: UIViewController,UITableViewDataSource, UITableViewDelegate, Bl
         if let _ = serial.connectedPeripheral {
             return
         }
-        
+    
         view.makeToast(message: "Connection Fail - Time out", duration: 2, position: "center")
     }
 

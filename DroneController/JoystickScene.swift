@@ -29,11 +29,6 @@ class GameScene: SKScene {
         addChild(rotateAnalogStick)
         
         //MARK: Handlers begin
-        
-        moveAnalogStick.startHandler = { [unowned self] in
-            
-        }
-        
         moveAnalogStick.trackingHandler = { [unowned self] data in
             self.lData = data.velocity
         }

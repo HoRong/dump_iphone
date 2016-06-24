@@ -21,6 +21,8 @@ class ViewController: UIViewController, BluetoothSerialDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        DroneState.sharedInstance;
+       
         // init serial
         serial = BluetoothSerial(delegate: self)
         serial.writeType = .WithoutResponse
@@ -42,18 +44,16 @@ class ViewController: UIViewController, BluetoothSerialDelegate {
         }
     }
     
+
     override func viewWillAppear(animated: Bool) {
         tTimer = NSTimer.scheduledTimerWithTimeInterval(1, target: self, selector: #selector(ViewController.setTimestamp), userInfo: nil, repeats: true)
         
         if(serial.isReady) {
             bTimer = NSTimer.scheduledTimerWithTimeInterval(0.01, target: self, selector: #selector(ViewController.sendJoysticState), userInfo: nil, repeats: true)
-            print("timer start")
         }
-        
     }
     
     override func viewDidDisappear(animated: Bool) {
-        
         tTimer.invalidate()
         if bTimer.valid { bTimer.invalidate() }
     }
