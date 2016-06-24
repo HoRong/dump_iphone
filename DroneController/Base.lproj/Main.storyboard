@@ -1056,7 +1056,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="조이스틱 모드" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qfl-f1-IdI">
-                                <rect key="frame" x="41" y="86" width="87.5" height="20"/>
+                                <rect key="frame" x="41" y="86" width="88" height="20"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="20" id="GI7-lG-GFV"/>
                                     <constraint firstAttribute="width" constant="87.5" id="iZi-uL-k4a"/>
