@@ -30,6 +30,7 @@ class Conn_BLTH: UIViewController,UITableViewDataSource, UITableViewDelegate, Bl
         serial.stopScan()
         
         btn_bluetooth.enabled = true
+        btn_bluetooth.backgroundColor = UIColor.whiteColor()
     }
     
     /// Should be called 10s after we've begun connecting
@@ -62,11 +63,18 @@ class Conn_BLTH: UIViewController,UITableViewDataSource, UITableViewDelegate, Bl
 
     
     @IBAction func scanBluetooth(sender: AnyObject) {
+        
+        if serial.state != .PoweredOn {
+            view.makeToast(message: "Bluetooth not turned on", duration: 2, position: "center")
+            return
+        }
+        
         serial.startScan()
         
         timer = NSTimer.scheduledTimerWithTimeInterval(10, target: self, selector: #selector(Conn_BLTH.scanTimeOut), userInfo: nil, repeats: false)
         
         btn_bluetooth.enabled = false;
+        btn_bluetooth.backgroundColor = UIColor.darkGrayColor()
     }
     
     func numberOfSectionsInTableView(tableView: UITableView) -> Int {
@@ -96,6 +104,7 @@ class Conn_BLTH: UIViewController,UITableViewDataSource, UITableViewDelegate, Bl
         // the user has selected a peripheral, so stop scanning and proceed to the next view
         serial.stopScan()
         btn_bluetooth.enabled = true;
+        btn_bluetooth.backgroundColor = UIColor.whiteColor()
         selectedPeripheral = peripherals[indexPath.row].peripheral
         serial.connectToPeripheral(selectedPeripheral!)
         
