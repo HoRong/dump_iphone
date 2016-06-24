@@ -553,7 +553,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sIE-QK-UWV" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1673" y="-29"/>
+            <point key="canvasLocation" x="1587" y="-33"/>
         </scene>
         <!--Conn DroneVC-->
         <scene sceneID="vI2-45-JYy">
@@ -730,7 +730,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ryH-dW-WOn" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1629" y="437"/>
+            <point key="canvasLocation" x="1376" y="249"/>
         </scene>
         <!--Menu SettingVC-->
         <scene sceneID="aHH-ai-zfS">
@@ -769,6 +769,9 @@
                                 <state key="normal" image="set_icon_equalizer">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <segue destination="HZD-s6-xh7" kind="modal" id="o7C-zm-BMN"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="erJ-eR-ZkW">
                                 <rect key="frame" x="214" y="70" width="140" height="80"/>
@@ -793,6 +796,9 @@
                                 <state key="normal" image="set_icon_alert">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <segue destination="ixY-EX-2uT" kind="modal" id="cV4-fi-Pfd"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="알람 및 경보" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="K63-Ei-xLk">
                                 <rect key="frame" x="441" y="129" width="42" height="21"/>
@@ -823,7 +829,7 @@
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="ixY-EX-2uT" kind="presentation" id="nhe-Ix-mxv"/>
+                                    <segue destination="vXx-i2-Y1g" kind="modal" id="l7k-yt-3SB"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="민감도 설정" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iyg-20-4hA">
@@ -1448,6 +1454,9 @@
                                 <state key="normal" image="connect_icon_dron">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <segue destination="TVG-UT-wnq" kind="modal" id="Ap3-FO-Pc0"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eJq-4N-gho">
                                 <rect key="frame" x="214" y="70" width="140" height="80"/>
@@ -1456,6 +1465,9 @@
                                 <state key="normal" image="connect_icon_bluetooth">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <segue destination="b9O-2O-evU" kind="modal" id="puS-YL-Zsb"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NsS-0F-Xb1">
                                 <rect key="frame" x="392" y="70" width="140" height="80"/>
@@ -1540,7 +1552,6 @@
                     </view>
                     <navigationItem key="navigationItem" id="nW0-Zu-EXc"/>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lFI-hF-RuK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
