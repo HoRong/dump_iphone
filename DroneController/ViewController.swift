@@ -88,6 +88,14 @@ class ViewController: UIViewController, BluetoothSerialDelegate {
             btn_start.tag = 0
         }
     }
+    
+    func serialDidReceiveString(message: String) {
+        // add the received text to the textView, optionally with a line break at the end
+        print(message)
+        
+        
+        /* 기기로부터 메세지 받은 것....*/
+    }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
