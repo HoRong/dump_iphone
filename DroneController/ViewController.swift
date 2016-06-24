@@ -84,6 +84,5 @@ class ViewController: UIViewController, BluetoothSerialDelegate {
     func serialDidChangeState(newState: CBCentralManagerState) {
         /* 기기 블루투스 상태 변화할 때 호출되는 메소드*/
     }
-    
 }
 
