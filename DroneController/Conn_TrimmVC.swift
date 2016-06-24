@@ -40,7 +40,6 @@ class Conn_TrimmVC: UIViewController, BluetoothSerialDelegate {
             rollValue -= controlValue
         }
 
-        
         rollValue = Double(round(1000*rollValue)/1000)
         tv_roll.text = trimValueToString(rollValue)
         serial.sendMessageToDevice("\(head) ROLL_TRIM \(rollValue)\(tail)")

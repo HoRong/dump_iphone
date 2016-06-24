@@ -12,6 +12,7 @@ import CoreBluetooth
 
 class ViewController: UIViewController, BluetoothSerialDelegate {
 
+    @IBOutlet weak var btn_start: UIButton!
     @IBOutlet weak var timestamp: UILabel!
     var tTimer = NSTimer() /* For Time Change */
     var bTimer = NSTimer() /* For send Message To BLE Device */
@@ -22,7 +23,7 @@ class ViewController: UIViewController, BluetoothSerialDelegate {
         super.viewDidLoad()
         
         DroneState.sharedInstance;
-       
+      
         // init serial
         serial = BluetoothSerial(delegate: self)
         serial.writeType = .WithoutResponse
@@ -46,16 +47,21 @@ class ViewController: UIViewController, BluetoothSerialDelegate {
     
 
     override func viewWillAppear(animated: Bool) {
+        
         tTimer = NSTimer.scheduledTimerWithTimeInterval(1, target: self, selector: #selector(ViewController.setTimestamp), userInfo: nil, repeats: true)
         
         if(serial.isReady) {
             bTimer = NSTimer.scheduledTimerWithTimeInterval(0.01, target: self, selector: #selector(ViewController.sendJoysticState), userInfo: nil, repeats: true)
         }
+        print(DroneState.sharedInstance.getJoystickMode())
+        scene.setJoystickMode(DroneState.sharedInstance.getJoystickMode())
     }
     
     override func viewDidDisappear(animated: Bool) {
         tTimer.invalidate()
         if bTimer.valid { bTimer.invalidate() }
+        
+        
     }
     
     func setTimestamp(){
@@ -69,6 +75,19 @@ class ViewController: UIViewController, BluetoothSerialDelegate {
         print(jdata)
     }
     
+    @IBAction func onClickStart(sender: AnyObject) {
+       
+        if(btn_start.tag != 1 ){
+            btn_start.setTitle("STOP", forState: UIControlState.Normal)
+            btn_start.backgroundColor = UIColor.redColor()
+            btn_start.tag = 1
+        }
+        else {
+            btn_start.setTitle("START", forState: UIControlState.Normal)
+            btn_start.backgroundColor = UIColor.greenColor()
+            btn_start.tag = 0
+        }
+    }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

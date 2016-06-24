@@ -9,11 +9,12 @@ import SpriteKit
 
 class GameScene: SKScene {
     
+    var img_joystick: [UIImage] = [UIImage(named: "joystick_ver1")!, UIImage(named: "joystick_ver2")!, UIImage(named: "joystick_ver1")!]
     var lData = CGPoint(x: 0.0, y: 0.0),rData = CGPoint(x: 0.0, y: 0.0)
     
-    let moveAnalogStick =  🕹(diameters: (220, 35), colors: (UIColor.clearColor(), UIColor.whiteColor()), images: (UIImage(named: "joystick_ver1"), UIImage(named: "stick")))
+    var moveAnalogStick =  🕹(diameters: (220, 35), colors: (UIColor.clearColor(), UIColor.whiteColor()), images: (UIImage(named: "joystick_ver1"), UIImage(named: "stick")))
     
-    let rotateAnalogStick = AnalogJoystick(diameters: (220, 35),colors: (UIColor.clearColor(), UIColor.whiteColor()), images: (UIImage(named: "joystick_ver2"), UIImage(named: "stick")))
+    var rotateAnalogStick = AnalogJoystick(diameters: (220, 35),colors: (UIColor.clearColor(), UIColor.whiteColor()), images: (UIImage(named: "joystick_ver2"), UIImage(named: "stick")))
     
     
     override func didMoveToView(view: SKView) {
@@ -51,6 +52,8 @@ class GameScene: SKScene {
         
         view.multipleTouchEnabled = true
     }
+    
+    
 
     
     override func update(currentTime: CFTimeInterval) {
@@ -60,6 +63,32 @@ class GameScene: SKScene {
     func getJoystickData() -> (left: CGPoint, right: CGPoint) {
         
         return (lData, rData)
+    }
+    
+    func setJoystickMode(_mode: Int){
+        
+        switch _mode {
+            
+        case 0:
+            moveAnalogStick.substrate.image = img_joystick[2]
+            rotateAnalogStick.substrate.image = img_joystick[2]
+            
+            print(1)
+            break
+            
+        case 1:
+            moveAnalogStick.substrate.image = img_joystick[0]
+            rotateAnalogStick.substrate.image = img_joystick[1]
+            break
+            
+        case 2:
+            moveAnalogStick.substrate.image = img_joystick[1]
+            rotateAnalogStick.substrate.image = img_joystick[0]
+            break
+            
+        default:
+            break
+        }
     }
 }
 

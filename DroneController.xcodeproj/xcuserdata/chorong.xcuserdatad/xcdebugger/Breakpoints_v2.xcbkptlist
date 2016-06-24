@@ -166,11 +166,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "DroneController/Conn_TrimmVC.swift"
-            timestampString = "488469816.037576"
+            timestampString = "488480546.163305"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "63"
-            endingLineNumber = "63"
+            startingLineNumber = "62"
+            endingLineNumber = "62"
             landmarkName = "controlValueChanged(_:)"
             landmarkType = "5">
          </BreakpointContent>
