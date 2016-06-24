@@ -166,11 +166,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "DroneController/Conn_TrimmVC.swift"
-            timestampString = "488469102.09388"
+            timestampString = "488469816.037576"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "64"
-            endingLineNumber = "64"
+            startingLineNumber = "63"
+            endingLineNumber = "63"
             landmarkName = "controlValueChanged(_:)"
             landmarkType = "5">
          </BreakpointContent>
@@ -189,6 +189,69 @@
             endingLineNumber = "36"
             landmarkName = "sendManualRollSignal(_:)"
             landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "DroneController/AppDelegate.swift"
+            timestampString = "488469863.746137"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "13"
+            endingLineNumber = "13"
+            landmarkName = "AppDelegate"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "DroneController.AppDelegate.__deallocating_deinit"
+                  moduleName = "DroneController"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/chorong/Desktop/DroneController/DroneController/AppDelegate.swift"
+                  timestampString = "488470169.780532"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "12">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "DroneController.AppDelegate.init () -&gt; DroneController.AppDelegate"
+                  moduleName = "DroneController"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/chorong/Desktop/DroneController/DroneController/AppDelegate.swift"
+                  timestampString = "488470169.780725"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "15"
+                  endingLineNumber = "15"
+                  offsetFromSymbolStart = "64">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "main"
+                  moduleName = "DroneController"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/chorong/Desktop/DroneController/DroneController/AppDelegate.swift"
+                  timestampString = "488470169.780835"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "13"
+                  endingLineNumber = "13"
+                  offsetFromSymbolStart = "28">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>
