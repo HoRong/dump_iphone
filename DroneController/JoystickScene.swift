@@ -12,9 +12,9 @@ class GameScene: SKScene {
     var img_joystick: [UIImage] = [UIImage(named: "joystick_ver1")!, UIImage(named: "joystick_ver2")!, UIImage(named: "joystick_ver1")!]
     var lData = CGPoint(x: 0.0, y: 0.0),rData = CGPoint(x: 0.0, y: 0.0)
     
-    var moveAnalogStick =  🕹(diameters: (220, 35), colors: (UIColor.clearColor(), UIColor.whiteColor()), images: (UIImage(named: "joystick_ver1"), UIImage(named: "stick")))
+    var moveAnalogStick =  🕹(diameters: (200, 35), colors: (UIColor.clearColor(), UIColor.whiteColor()), images: (UIImage(named: "joystick_ver1"), UIImage(named: "stick")))
     
-    var rotateAnalogStick = AnalogJoystick(diameters: (220, 35),colors: (UIColor.clearColor(), UIColor.whiteColor()), images: (UIImage(named: "joystick_ver2"), UIImage(named: "stick")))
+    var rotateAnalogStick = AnalogJoystick(diameters: (200, 35),colors: (UIColor.clearColor(), UIColor.whiteColor()), images: (UIImage(named: "joystick_ver2"), UIImage(named: "stick")))
     
     
     override func didMoveToView(view: SKView) {
