@@ -12,6 +12,9 @@ import CoreBluetooth
 
 class ViewController: UIViewController, BluetoothSerialDelegate {
 
+    var startByte = 203
+    var endByte = 202
+    
     @IBOutlet weak var btn_start: UIButton!
     @IBOutlet weak var timestamp: UILabel!
     var tTimer = NSTimer() /* For Time Change */
@@ -60,8 +63,6 @@ class ViewController: UIViewController, BluetoothSerialDelegate {
     override func viewDidDisappear(animated: Bool) {
         tTimer.invalidate()
         if bTimer.valid { bTimer.invalidate() }
-        
-        
     }
     
     func setTimestamp(){
@@ -70,9 +71,12 @@ class ViewController: UIViewController, BluetoothSerialDelegate {
     }
     
     func sendJoysticState(){
-        let jdata = scene.getJoystickData()
-        serial.sendMessageToDevice("\(jdata)");
-        print(jdata)
+        var jdata = ""
+        
+        if(btn_start.tag == 1) {
+            jdata = scene.getJoystickData()
+        }
+        serial.sendMessageToDevice("\(startByte)\(jdata)\(endByte)")
     }
     
     @IBAction func onClickStart(sender: AnyObject) {
@@ -81,11 +85,13 @@ class ViewController: UIViewController, BluetoothSerialDelegate {
             btn_start.setTitle("STOP", forState: UIControlState.Normal)
             btn_start.backgroundColor = UIColor.redColor()
             btn_start.tag = 1
+            startByte = 201
         }
         else {
             btn_start.setTitle("START", forState: UIControlState.Normal)
             btn_start.backgroundColor = UIColor.greenColor()
             btn_start.tag = 0
+            startByte = 203
         }
     }
     

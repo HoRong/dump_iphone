@@ -6,6 +6,7 @@
 //
 
 import SpriteKit
+import Foundation
 
 class GameScene: SKScene {
     
@@ -32,7 +33,17 @@ class GameScene: SKScene {
         //MARK: Handlers begin
         moveAnalogStick.trackingHandler = { [unowned self] data in
             self.lData = data.velocity
+            var jData = ""
+            
+            jData += self.cgPointToString(self.lData.x)
+            jData += self.cgPointToString(self.lData.y)
+            jData += self.cgPointToString(self.rData.x)
+            jData += self.cgPointToString(self.rData.y)
+            
+            print(jData)
         }
+        
+        
         
         moveAnalogStick.stopHandler = { [unowned self] in
             self.lData = CGPoint(x: 0.0, y: 0.0)
@@ -48,21 +59,35 @@ class GameScene: SKScene {
         }
         
         //MARK: Handlers end
-
-        
         view.multipleTouchEnabled = true
     }
-    
-    
 
     
     override func update(currentTime: CFTimeInterval) {
         /* Called before each frame is rendered */
     }
     
-    func getJoystickData() -> (left: CGPoint, right: CGPoint) {
+    func getJoystickData() -> (String) {
+    
+        var jData = ""
+      
+        jData += cgPointToString(self.lData.x)
+        jData += cgPointToString(self.lData.y)
+        jData += cgPointToString(self.rData.x)
+        jData += cgPointToString(self.rData.y)
         
-        return (lData, rData)
+        print(jData)
+        
+        return jData
+    }
+    
+    func cgPointToString(point : CGFloat) -> (String){
+        let numberOfPlaces = 0.0
+        let multiplier = pow(10.0, numberOfPlaces)
+        var num = Int(round(Double(point) * multiplier) / multiplier)
+        num += 100
+        
+        return String(num)
     }
     
     func setJoystickMode(_mode: Int){
@@ -72,8 +97,6 @@ class GameScene: SKScene {
         case 0:
             moveAnalogStick.substrate.image = img_joystick[2]
             rotateAnalogStick.substrate.image = img_joystick[2]
-            
-            print(1)
             break
             
         case 1:
